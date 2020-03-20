@@ -45,8 +45,9 @@ public class SFMPQWrapper {
 
     public Pointer openArchiveForUpdate(String lpFileName, int dwFlags, int dwMaximumFilesInArchive) {
         Pointer p = sfmpq.MpqOpenArchiveForUpdate(lpFileName, dwFlags, dwMaximumFilesInArchive);
-        if (p == null) {
+        if (p.toString().equals("native@0xffffffff")) {
             System.err.println("openArchiveForUpdate Error: " + Native.getLastError());
+            p = null;
         }
         return p;
     }

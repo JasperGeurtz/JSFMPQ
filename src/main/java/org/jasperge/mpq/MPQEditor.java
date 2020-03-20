@@ -23,8 +23,8 @@ public class MPQEditor {
         return sfmpq.addFileToArchive(archive, sourceFileName, destFileName, MAFA_REPLACE_EXISTING);
     }
 
-    int close() {
-        return sfmpq.closeUpdatedArchive(archive);
+    boolean close() {
+        return sfmpq.closeUpdatedArchive(archive) == 1;
     }
 
 }
