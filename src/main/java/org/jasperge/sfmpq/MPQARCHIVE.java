@@ -21,7 +21,7 @@ public class MPQARCHIVE extends Structure {
     public Pointer lpPrevArc; //4// Pointer to the previous MPQARCHIVE struct. 0xEAFC5E23 if first archive [lpPrevArc.toString().equals("native@0xeafc5e23")]
 
     //[TYPE=char[260]]
-    public Pointer szFileName; //8// Filename of the archive
+    public byte[] szFileName = new byte[260]; //8// Filename of the archive
 
     //[TYPE=HANDLE]
     public Pointer hFile; //10C// The archive's file handle
@@ -29,7 +29,7 @@ public class MPQARCHIVE extends Structure {
     public int dwFlags1; //110// Some flags, bit 0 seems to be set when opening an archive from a hard drive if bit 1 in the flags for SFileOpenArchive is set, bit 1 (0 based) seems to be set when opening an archive from a CD
     public int dwPriority; //114// Priority of the archive set when calling SFileOpenArchive
 
-    //[TYPE=MPQFILE.ByReference
+    //[TYPE=MPQFILE.ByReference]
     public Pointer lpLastReadFile; //118// Pointer to the last read file's MPQFILE struct. This is cleared when finished reading a block
 
     public int dwUnk; //11C// Seems to always be 0

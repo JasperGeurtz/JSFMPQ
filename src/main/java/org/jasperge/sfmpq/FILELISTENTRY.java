@@ -11,7 +11,7 @@ public class FILELISTENTRY extends Structure {
     public int dwCompressedSize; // Compressed size of file
     public int dwFullSize; // Uncompressed size of file
     public int dwFlags; // Flags for file
-    public char[] szFileName = new char[260];
+    public byte[] szFileName = new byte[260];
 
     protected List<String> getFieldOrder() {
         return Arrays.asList("dwFileExists", "lcLocale", "dwCompressedSize", "dwFullSize", "dwFlags", "szFileName");
