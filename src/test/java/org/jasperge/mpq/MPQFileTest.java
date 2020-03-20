@@ -15,7 +15,7 @@ public class MPQFileTest {
         MPQEditor mpqArchive = new MPQEditor(mpq.getAbsolutePath());
 
         mpqArchive.addFile(tbl.getAbsolutePath(), "rez\\stat_txt.tbl");
-        mpqArchive.close();
+        assert mpqArchive.close();
     }
 
 }
