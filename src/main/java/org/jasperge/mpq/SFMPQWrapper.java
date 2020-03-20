@@ -1,10 +1,10 @@
-package org.jarsperge.mpq;
+package org.jasperge.mpq;
 
 import com.sun.jna.Native;
 import com.sun.jna.Pointer;
 import com.sun.jna.ptr.PointerByReference;
-import org.jarsperge.sfmpq.SFMPQ;
-import org.jarsperge.sfmpq.SFMPQVERSION;
+import org.jasperge.sfmpq.SFMPQ;
+import org.jasperge.sfmpq.SFMPQVERSION;
 
 public class SFMPQWrapper {
     public final SFMPQ sfmpq = SFMPQ.instanciate();

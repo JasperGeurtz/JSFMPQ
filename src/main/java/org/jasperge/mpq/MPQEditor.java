@@ -1,8 +1,8 @@
-package org.jarsperge.mpq;
+package org.jasperge.mpq;
 
 import com.sun.jna.Pointer;
 
-import static org.jarsperge.sfmpq.SFMPQ.*;
+import static org.jasperge.sfmpq.SFMPQ.*;
 
 public class MPQEditor {
     final SFMPQWrapper sfmpq = new SFMPQWrapper();

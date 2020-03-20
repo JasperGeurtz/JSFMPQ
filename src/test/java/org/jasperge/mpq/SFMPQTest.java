@@ -1,16 +1,13 @@
 package org.jasperge.mpq;
 
 import com.sun.jna.Pointer;
-import com.sun.jna.ptr.PointerByReference;
-import org.jarsperge.mpq.*;
-import org.jarsperge.sfmpq.MPQARCHIVE;
-import org.jarsperge.sfmpq.SFMPQVERSION;
+import org.jasperge.sfmpq.SFMPQVERSION;
 import org.junit.*;
 
 import java.io.File;
 
-import static org.jarsperge.sfmpq.SFMPQ.MAFA_REPLACE_EXISTING;
-import static org.jarsperge.sfmpq.SFMPQ.MOAU_OPEN_EXISTING;
+import static org.jasperge.sfmpq.SFMPQ.MAFA_REPLACE_EXISTING;
+import static org.jasperge.sfmpq.SFMPQ.MOAU_OPEN_EXISTING;
 
 public class SFMPQTest {
     @Test

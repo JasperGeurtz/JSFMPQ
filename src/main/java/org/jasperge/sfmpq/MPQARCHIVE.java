@@ -1,8 +1,7 @@
-package org.jarsperge.sfmpq;
+package org.jasperge.sfmpq;
 
 import com.sun.jna.Pointer;
 import com.sun.jna.Structure;
-import com.sun.jna.ptr.PointerByReference;
 
 import java.util.Arrays;
 import java.util.List;

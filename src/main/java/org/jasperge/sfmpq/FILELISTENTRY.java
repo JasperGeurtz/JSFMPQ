@@ -1,4 +1,4 @@
-package org.jarsperge.sfmpq;
+package org.jasperge.sfmpq;
 
 import com.sun.jna.Structure;
 
