@@ -15,16 +15,27 @@ import java.util.List;
  */
 public class MPQARCHIVE extends Structure {
     // Arranged according to priority with lowest priority first
-    public MPQARCHIVE.ByReference lpNextArc; //0// Pointer to the next MPQARCHIVE struct. Pointer to addresses of first and last archives if last archive
-    public MPQARCHIVE.ByReference lpPrevArc; //4// Pointer to the previous MPQARCHIVE struct. 0xEAFC5E23 if first archive
-    public char[] szFileName = new char[260]; //8// Filename of the archive
+    //[TYPE=MPQARCHIVE.ByReference]
+    public Pointer lpNextArc; //0// Pointer to the next MPQARCHIVE struct. Pointer to addresses of first and last archives if last archive
+
+    //[TYPE=MPQARCHIVE.ByReference]
+    public Pointer lpPrevArc; //4// Pointer to the previous MPQARCHIVE struct. 0xEAFC5E23 if first archive
+
+    boolean isFirstArchive() {
+        return lpPrevArc.toString().equals("native@0xeafc5e23");
+    }
+    //[TYPE=char[260]]
+    public Pointer szFileName; //8// Filename of the archive
 
     //[TYPE=HANDLE]
     public Pointer hFile; //10C// The archive's file handle
 
     public int dwFlags1; //110// Some flags, bit 0 seems to be set when opening an archive from a hard drive if bit 1 in the flags for SFileOpenArchive is set, bit 1 (0 based) seems to be set when opening an archive from a CD
     public int dwPriority; //114// Priority of the archive set when calling SFileOpenArchive
-    public MPQFILE.ByReference lpLastReadFile; //118// Pointer to the last read file's MPQFILE struct. This is cleared when finished reading a block
+
+    //[TYPE=MPQFILE.ByReference
+    public Pointer lpLastReadFile; //118// Pointer to the last read file's MPQFILE struct. This is cleared when finished reading a block
+
     public int dwUnk; //11C// Seems to always be 0
     public int dwBlockSize; //120// Size of file blocks in bytes
 
@@ -34,9 +45,15 @@ public class MPQARCHIVE extends Structure {
     public int dwBufferSize; //128// Size of the read buffer for archive. This is cleared when finished reading a block
     public int dwMPQStart; //12C// The starting offset of the archive
     public int dwMPQEnd; //130// The ending offset of the archive
-    public MPQHEADER.ByReference lpMPQHeader; //134// Pointer to the archive header
-    public BLOCKTABLEENTRY.ByReference lpBlockTable; //138// Pointer to the start of the block table
-    public HASHTABLEENTRY.ByReference lpHashTable; //13C// Pointer to the start of the hash table
+
+    //[TYPE=MPQHEADER.ByReference]
+    public Pointer lpMPQHeader; //134// Pointer to the archive header
+
+    //[TYPE=BLOCKTABLEENTRY.ByReference]
+    public Pointer lpBlockTable; //138// Pointer to the start of the block table
+
+    //[TYPE=HASHTABLEENTRY.ByReference]
+    public Pointer lpHashTable; //13C// Pointer to the start of the hash table
     public int dwReadOffset; //140// Offset to the data for a file
     public int dwRefCount; //144// Count of references to this open archive.  This is incremented for each file opened from the archive, and decremented for each file closed
     // Extra struct members used by SFmpq
@@ -54,6 +71,7 @@ public class MPQARCHIVE extends Structure {
 
     public MPQARCHIVE(Pointer ptr) {
         super(ptr);
+        read();
     }
 
     public static class ByReference extends MPQARCHIVE implements Structure.ByReference {

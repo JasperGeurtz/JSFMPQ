@@ -6,6 +6,10 @@ import com.sun.jna.Pointer;
 import com.sun.jna.platform.win32.WinNT.HANDLE;
 import com.sun.jna.ptr.PointerByReference;
 
+/**
+ * https://www.eshayne.com/jnaex/index.html?example=15
+ * https://sfsrealm.hopto.org/inside_mopaq/chapter4.htm
+ */
 public interface SFMPQ extends Library {
     static SFMPQ instanciate() {
         String dllName = System.getProperty("sun.arch.data.model").equals("64") ? "SFmpq64" : "SFmpq";
@@ -130,7 +134,7 @@ public interface SFMPQ extends Library {
 
     boolean SFileGetArchiveName(Pointer hMPQ, Pointer lpBuffer, int dwBufferLength);
 
-    boolean SFileOpenFile(Pointer lpFileName, Pointer hFile);
+    boolean SFileOpenFile(String lpFileName, PointerByReference hFile);
 
     boolean SFileOpenFileEx(Pointer hMPQ, Pointer lpFileName, int dwSearchScope, Pointer hFile);
 
@@ -162,17 +166,17 @@ public interface SFMPQ extends Library {
     boolean SFileListFiles(Pointer hMPQ, Pointer lpFileLists, Pointer lpListBuffer, int dwFlags);
 
     // Archive editing functions implemented by this library
-    Pointer MpqOpenArchiveForUpdate(Pointer lpFileName, int dwFlags, int dwMaximumFilesInArchive);
+    Pointer MpqOpenArchiveForUpdate(String lpFileName, int dwFlags, int dwMaximumFilesInArchive);
 
     int MpqCloseUpdatedArchive(Pointer hMPQ, int dwUnknown2);
 
-    boolean MpqAddFileToArchive(Pointer hMPQ, Pointer lpSourceFileName, Pointer lpDestFileName, int dwFlags);
+    boolean MpqAddFileToArchive(Pointer hMPQ, String lpSourceFileName, String lpDestFileName, int dwFlags);
 
-    boolean MpqAddWaveToArchive(Pointer hMPQ, Pointer lpSourceFileName, Pointer lpDestFileName, int dwFlags, int dwQuality);
+    boolean MpqAddWaveToArchive(Pointer hMPQ, String lpSourceFileName, String lpDestFileName, int dwFlags, int dwQuality);
 
-    boolean MpqRenameFile(Pointer hMPQ, Pointer lpcOldFileName, Pointer lpcNewFileName);
+    boolean MpqRenameFile(Pointer hMPQ, String lpcOldFileName, String lpcNewFileName);
 
-    boolean MpqDeleteFile(Pointer hMPQ, Pointer lpFileName);
+    boolean MpqDeleteFile(Pointer hMPQ, String lpFileName);
 
     boolean MpqCompactArchive(Pointer hMPQ);
 

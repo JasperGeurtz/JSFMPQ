@@ -1,11 +1,16 @@
 package org.jasperge.mpq;
 
+import com.sun.jna.Pointer;
+import com.sun.jna.ptr.PointerByReference;
 import org.jarsperge.mpq.*;
 import org.jarsperge.sfmpq.MPQARCHIVE;
 import org.jarsperge.sfmpq.SFMPQVERSION;
 import org.junit.*;
 
 import java.io.File;
+
+import static org.jarsperge.sfmpq.SFMPQ.MAFA_REPLACE_EXISTING;
+import static org.jarsperge.sfmpq.SFMPQ.MOAU_OPEN_EXISTING;
 
 public class SFMPQTest {
     @Test
@@ -19,12 +24,18 @@ public class SFMPQTest {
         Assert.assertArrayEquals(new short[]{1, 0 , 8, 1}, new short[]{v.Major, v.Minor, v.Revision, v.Subrevision});
 
         File f = new File("src/test/resources/patch_rt.mpq");
-        String path = f.getAbsolutePath();
-        System.out.println(path + ": " + f.exists());
-        MPQARCHIVE archive = sfmpq.openArchive(path, 0, 0);
-        //System.out.println(archive.lpFileName);
+        String archivePath = f.getAbsolutePath();
+        f = new File("src/test/resources/stat_txt.tbl");
+        String filePath = f.getAbsolutePath();
+        System.out.println(archivePath + ": " + f.exists());
+        System.out.println(filePath + ": " + f.exists());
 
-        //System.out.println(archive.lpFileName);
+        Pointer archive = sfmpq.openArchiveForUpdate(archivePath, MOAU_OPEN_EXISTING, 262144);
+        System.out.println(archive);
+        boolean ret = sfmpq.addFileToArchive(archive, filePath, "rez\\stat_txt.tbl", MAFA_REPLACE_EXISTING);
+        System.out.println(ret);
+        int closed = sfmpq.closeUpdatedArchive(archive);
+        System.out.println(closed);
     }
 
 

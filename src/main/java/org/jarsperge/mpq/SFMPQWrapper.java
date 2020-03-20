@@ -2,11 +2,9 @@ package org.jarsperge.mpq;
 
 import com.sun.jna.Native;
 import com.sun.jna.Pointer;
-import com.sun.jna.platform.win32.WinNT;
 import com.sun.jna.ptr.PointerByReference;
-import org.jarsperge.sfmpq.*;
-
-import java.lang.reflect.InvocationTargetException;
+import org.jarsperge.sfmpq.SFMPQ;
+import org.jarsperge.sfmpq.SFMPQVERSION;
 
 public class SFMPQWrapper {
     public final SFMPQ sfmpq = SFMPQ.instanciate();
@@ -24,20 +22,45 @@ public class SFMPQWrapper {
         return sfmpq.SFMpqGetVersion();
     }
 
-    public MPQARCHIVE openArchive(String lpFileName, int dwPriority, int dwFlag) {
+    public Pointer openArchive(String lpFileName, int dwPriority, int dwFlag) {
 
         PointerByReference ptr = new PointerByReference();
-        System.out.println(ptr.getValue());
 
         boolean ret = sfmpq.SFileOpenArchive(lpFileName, dwPriority, dwFlag, ptr);
         if (!ret) {
             System.err.println("openArchive Error: " + Native.getLastError());
         }
-        System.out.println(ptr.getValue());
-        MPQARCHIVE a = new MPQARCHIVE.ByReference(ptr.getValue());
-        System.out.println(a.lpFileName);
-        //System.out.println(abr.lpFileName);
-        return a;
+        return ptr.getValue();
     }
 
+    public Pointer openFile(String fileName) {
+        PointerByReference ptr = new PointerByReference();
+
+        boolean ret = sfmpq.SFileOpenFile(fileName, ptr);
+        if (!ret) {
+            System.err.println("openFile Error: " + Native.getLastError());
+        }
+        return ptr.getValue();
+    }
+
+    public Pointer openArchiveForUpdate(String lpFileName, int dwFlags, int dwMaximumFilesInArchive) {
+        Pointer p = sfmpq.MpqOpenArchiveForUpdate(lpFileName, dwFlags, dwMaximumFilesInArchive);
+        if (p == null) {
+            System.err.println("openArchiveForUpdate Error: " + Native.getLastError());
+        }
+        return p;
+    }
+
+    public int closeUpdatedArchive(Pointer archive) {
+        return sfmpq.MpqCloseUpdatedArchive(archive, 0);
+    }
+
+
+    public boolean addFileToArchive(Pointer archive, String sourceFileName, String destFileName, int dwFlags) {
+        boolean ret = sfmpq.MpqAddFileToArchive(archive, sourceFileName, destFileName, dwFlags);
+        if (!ret) {
+            System.err.println("addFileToArchive Error: " + Native.getLastError());
+        }
+        return ret;
+    }
 }
