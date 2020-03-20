@@ -18,11 +18,8 @@ public class MPQARCHIVE extends Structure {
     public Pointer lpNextArc; //0// Pointer to the next MPQARCHIVE struct. Pointer to addresses of first and last archives if last archive
 
     //[TYPE=MPQARCHIVE.ByReference]
-    public Pointer lpPrevArc; //4// Pointer to the previous MPQARCHIVE struct. 0xEAFC5E23 if first archive
+    public Pointer lpPrevArc; //4// Pointer to the previous MPQARCHIVE struct. 0xEAFC5E23 if first archive [lpPrevArc.toString().equals("native@0xeafc5e23")]
 
-    boolean isFirstArchive() {
-        return lpPrevArc.toString().equals("native@0xeafc5e23");
-    }
     //[TYPE=char[260]]
     public Pointer szFileName; //8// Filename of the archive
 
