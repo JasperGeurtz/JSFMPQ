@@ -2,6 +2,9 @@ package org.jasperge.mpq;
 
 import com.sun.jna.Pointer;
 
+import java.util.List;
+import java.util.stream.Collectors;
+
 import static org.jasperge.sfmpq.SFMPQ.*;
 
 public class MPQEditor {
@@ -21,6 +24,12 @@ public class MPQEditor {
      */
     boolean addFile(String sourceFileName, String destFileName) {
         return sfmpq.addFileToArchive(archive, sourceFileName, destFileName, MAFA_REPLACE_EXISTING);
+    }
+
+    List<MPQFile> getFiles() {
+        return sfmpq.listFiles(archive).stream()
+                .map(MPQFile::new)
+                .collect(Collectors.toList());
     }
 
     boolean close() {

@@ -135,7 +135,7 @@ public interface SFMPQ extends Library {
 
     boolean SFileOpenFile(String lpFileName, PointerByReference hFile);
 
-    boolean SFileOpenFileEx(Pointer hMPQ, Pointer lpFileName, int dwSearchScope, Pointer hFile);
+    boolean SFileOpenFileEx(Pointer hMPQ, String lpFileName, int dwSearchScope, Pointer hFile);
 
     boolean SFileCloseFile(Pointer hFile);
 
@@ -162,7 +162,7 @@ public interface SFMPQ extends Library {
 
     int SFileFindMpqHeader(Pointer hFile);
 
-    boolean SFileListFiles(Pointer hMPQ, Pointer lpFileLists, Pointer lpListBuffer, int dwFlags);
+    boolean SFileListFiles(Pointer hMPQ, String lpFileLists, FILELISTENTRY[] lpListBuffer, int dwFlags);
 
     // Archive editing functions implemented by this library
     Pointer MpqOpenArchiveForUpdate(String lpFileName, int dwFlags, int dwMaximumFilesInArchive);

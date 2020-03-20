@@ -3,11 +3,21 @@ package org.jasperge.mpq;
 import com.sun.jna.Native;
 import com.sun.jna.Pointer;
 import com.sun.jna.ptr.PointerByReference;
+import org.jasperge.sfmpq.FILELISTENTRY;
 import org.jasperge.sfmpq.SFMPQ;
 import org.jasperge.sfmpq.SFMPQVERSION;
 
+import java.io.File;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
+
+import static org.jasperge.sfmpq.SFMPQ.SFILE_INFO_HASH_TABLE_SIZE;
+
 public class SFMPQWrapper {
-    public final SFMPQ sfmpq = SFMPQ.instanciate();
+    public SFMPQ sfmpq = SFMPQ.instanciate();
+    public String listFile = new File("Listfile.txt").getAbsolutePath();
 
     public String getVersionString() {
         return sfmpq.MpqGetVersionString();
@@ -16,7 +26,6 @@ public class SFMPQWrapper {
     public float getVersionFloat() {
         return sfmpq.MpqGetVersion();
     }
-
 
     public SFMPQVERSION getVersionStruct() {
         return sfmpq.SFMpqGetVersion();
@@ -31,6 +40,10 @@ public class SFMPQWrapper {
             System.err.println("openArchive Error: " + Native.getLastError());
         }
         return ptr.getValue();
+    }
+
+    public boolean closeArchive(Pointer archive) {
+        return sfmpq.SFileCloseArchive(archive);
     }
 
     public Pointer openFile(String fileName) {
@@ -56,6 +69,22 @@ public class SFMPQWrapper {
         return sfmpq.MpqCloseUpdatedArchive(archive, 0);
     }
 
+    public List<FILELISTENTRY> listFiles(Pointer archive) {
+        int n = sfmpq.SFileGetFileInfo(archive, SFILE_INFO_HASH_TABLE_SIZE);
+        if (n == 0) {
+            return new ArrayList<>();
+        }
+        FILELISTENTRY[] fileListBuffer = new FILELISTENTRY[n];
+
+        boolean ret = sfmpq.SFileListFiles(archive, listFile, fileListBuffer, 0);
+        if (!ret) {
+            System.err.println("listFiles Error: " + Native.getLastError());
+            return null;
+        }
+        return Arrays.stream(fileListBuffer)
+                .filter(f -> f.dwFileExists != 0)
+                .collect(Collectors.toList());
+    }
 
     public boolean addFileToArchive(Pointer archive, String sourceFileName, String destFileName, int dwFlags) {
         boolean ret = sfmpq.MpqAddFileToArchive(archive, sourceFileName, destFileName, dwFlags);

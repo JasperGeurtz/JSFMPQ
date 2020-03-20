@@ -1,22 +1,24 @@
 package org.jasperge.mpq;
 
 import com.sun.jna.Pointer;
+import org.jasperge.sfmpq.FILELISTENTRY;
 import org.jasperge.sfmpq.MPQARCHIVE;
 import org.jasperge.sfmpq.SFMPQVERSION;
 import org.junit.*;
 
 import java.io.File;
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
 
 import static org.jasperge.sfmpq.SFMPQ.*;
 
 public class SFMPQTest {
     String archivePath = new File("src/test/resources/patch_rt.mpq").getAbsolutePath();
     String filePath = new File("src/test/resources/stat_txt.tbl").getAbsolutePath();
-
+    SFMPQWrapper sfmpq = new SFMPQWrapper();
     @Test
     public void testAppending() {
-        SFMPQWrapper sfmpq = new SFMPQWrapper();
-
         Assert.assertEquals(2.0, sfmpq.getVersionFloat(), 0.0001);
         Assert.assertEquals("ShadowFlare MPQ API Library v1.08", sfmpq.getVersionString());
 
@@ -33,14 +35,20 @@ public class SFMPQTest {
 
     @Test
     public void testArchive() {
-        SFMPQWrapper sfmpq = new SFMPQWrapper();
-        Pointer archive = sfmpq.openArchive(archivePath, 0, 0);
+        Pointer archivePtr = sfmpq.openArchive(archivePath, 0, SFILE_OPEN_HARD_DISK_FILE);
+        MPQARCHIVE archive = new MPQARCHIVE.ByReference(archivePtr);
 
-        MPQARCHIVE a = new MPQARCHIVE.ByReference(archive);
+        Assert.assertEquals(new String(archive.szFileName).trim(), archivePath);
 
-        Assert.assertEquals(new String(a.szFileName).trim(), archivePath);
+        //System.out.println(a);
+        List<FILELISTENTRY> files = sfmpq.listFiles(archivePtr);
 
-        System.out.println(a);
+        Assert.assertTrue(files.stream().map(m -> (new String(m.szFileName)).trim())
+                .anyMatch(n -> n.equals("rez\\stat_txt.tbl")));
+
+        Assert.assertEquals(89, files.size());
+
+        Assert.assertTrue(sfmpq.closeArchive(archivePtr));
     }
 
 
