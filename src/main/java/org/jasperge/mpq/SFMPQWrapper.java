@@ -16,7 +16,7 @@ import java.util.stream.Collectors;
 import static org.jasperge.sfmpq.SFMPQ.SFILE_INFO_HASH_TABLE_SIZE;
 
 public class SFMPQWrapper {
-    public SFMPQ sfmpq = SFMPQ.instanciate();
+    public SFMPQ sfmpq = SFMPQ.instantiate();
     public String listFile = new File("Listfile.txt").getAbsolutePath();
 
     public String getVersionString() {
@@ -32,7 +32,6 @@ public class SFMPQWrapper {
     }
 
     public Pointer openArchive(String lpFileName, int dwPriority, int dwFlag) {
-
         PointerByReference ptr = new PointerByReference();
 
         boolean ret = sfmpq.SFileOpenArchive(lpFileName, dwPriority, dwFlag, ptr);
@@ -58,7 +57,8 @@ public class SFMPQWrapper {
 
     public Pointer openArchiveForUpdate(String lpFileName, int dwFlags, int dwMaximumFilesInArchive) {
         Pointer p = sfmpq.MpqOpenArchiveForUpdate(lpFileName, dwFlags, dwMaximumFilesInArchive);
-        if (p.toString().equals("native@0xffffffff")) {
+
+        if (Pointer.nativeValue(p) == 0xffffffff) {
             System.err.println("openArchiveForUpdate Error: " + Native.getLastError());
             p = null;
         }

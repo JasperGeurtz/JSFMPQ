@@ -4,12 +4,11 @@ import com.sun.jna.Pointer;
 import org.jasperge.sfmpq.FILELISTENTRY;
 import org.jasperge.sfmpq.MPQARCHIVE;
 import org.jasperge.sfmpq.SFMPQVERSION;
-import org.junit.*;
+import org.junit.Assert;
+import org.junit.Test;
 
 import java.io.File;
-import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Collectors;
 
 import static org.jasperge.sfmpq.SFMPQ.*;
 
@@ -17,6 +16,7 @@ public class SFMPQTest {
     String archivePath = new File("src/test/resources/patch_rt.mpq").getAbsolutePath();
     String filePath = new File("src/test/resources/stat_txt.tbl").getAbsolutePath();
     SFMPQWrapper sfmpq = new SFMPQWrapper();
+
     @Test
     public void testAppending() {
         Assert.assertEquals(2.0, sfmpq.getVersionFloat(), 0.0001);

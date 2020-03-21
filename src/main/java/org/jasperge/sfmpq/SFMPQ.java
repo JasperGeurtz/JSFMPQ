@@ -10,7 +10,7 @@ import com.sun.jna.ptr.PointerByReference;
  * https://sfsrealm.hopto.org/inside_mopaq/chapter4.htm
  */
 public interface SFMPQ extends Library {
-    static SFMPQ instanciate() {
+    static SFMPQ instantiate() {
         String dllName = System.getProperty("sun.arch.data.model").equals("64") ? "SFmpq64" : "SFmpq";
         return Native.load(dllName, SFMPQ.class);
     }
@@ -18,11 +18,6 @@ public interface SFMPQ extends Library {
     String MpqGetVersionString(); //LPCSTR SFMPQAPI WINAPI MpqGetVersionString();
 
     float MpqGetVersion(); //float  SFMPQAPI WINAPI MpqGetVersion();
-
-    /**
-     * Displays an about page in a web browser (this has only been tested in Internet Explorer). This is only for the dll version of SFmpq
-     */
-    void AboutSFMpq(); //void SFMPQAPI WINAPI AboutSFMpq();
 
     String SFMpqGetVersionString(); //LPCSTR SFMPQAPI WINAPI SFMpqGetVersionString();
 
@@ -129,29 +124,29 @@ public interface SFMPQ extends Library {
 
     boolean SFileCloseArchive(Pointer hMPQ);
 
-    boolean SFileOpenFileAsArchive(Pointer hSourceMPQ, Pointer lpFileName, int dwPriority, int dwFlags, Pointer hMPQ);
+    boolean SFileOpenFileAsArchive(Pointer hSourceMPQ, String lpFileName, int dwPriority, int dwFlags, PointerByReference hMPQ);
 
-    boolean SFileGetArchiveName(Pointer hMPQ, Pointer lpBuffer, int dwBufferLength);
+    boolean SFileGetArchiveName(Pointer hMPQ, byte[] lpBuffer, int dwBufferLength);
 
     boolean SFileOpenFile(String lpFileName, PointerByReference hFile);
 
-    boolean SFileOpenFileEx(Pointer hMPQ, String lpFileName, int dwSearchScope, Pointer hFile);
+    boolean SFileOpenFileEx(Pointer hMPQ, String lpFileName, int dwSearchScope, PointerByReference hFile);
 
     boolean SFileCloseFile(Pointer hFile);
 
-    int SFileGetFileSize(Pointer hFile, Pointer lpFileSizeHigh);
+    int SFileGetFileSize(Pointer hFile, PointerByReference lpFileSizeHigh);
 
-    boolean SFileGetFileArchive(Pointer hFile, Pointer hMPQ);
+    boolean SFileGetFileArchive(Pointer hFile, PointerByReference hMPQ);
 
-    boolean SFileGetFileName(Pointer hFile, Pointer lpBuffer, int dwBufferLength);
+    boolean SFileGetFileName(Pointer hFile, byte[] lpBuffer, int dwBufferLength);
 
     int SFileSetFilePointer(Pointer hFile, long lDistanceToMove, Pointer lplDistanceToMoveHigh, int dwMoveMethod);
 
-    boolean SFileReadFile(Pointer hFile, Pointer lpBuffer, int nNumberOfBytesToRead, Pointer lpNumberOfBytesRead, int lpOverlapped); //NOTE: set overLapped to 0
+    boolean SFileReadFile(Pointer hFile, byte[] lpBuffer, int nNumberOfBytesToRead, Pointer lpNumberOfBytesRead, int lpOverlapped); //NOTE: set overLapped to 0
 
     int SFileSetLocale(int nNewLocale);
 
-    boolean SFileGetBasePath(Pointer lpBuffer, int dwBufferLength);
+    boolean SFileGetBasePath(byte[] lpBuffer, int dwBufferLength);
 
     boolean SFileSetBasePath(Pointer lpNewBasePath);
 
@@ -182,17 +177,17 @@ public interface SFMPQ extends Library {
     // Extra archive editing functions
     Pointer MpqOpenArchiveForUpdateEx(Pointer lpFileName, int dwFlags, int dwMaximumFilesInArchive, int dwBlockSize);
 
-    boolean MpqAddFileToArchiveEx(Pointer hMPQ, Pointer lpSourceFileName, Pointer lpDestFileName, int dwFlags, int dwCompressionType, int dwCompressLevel);
+    boolean MpqAddFileToArchiveEx(Pointer hMPQ, String lpSourceFileName, String lpDestFileName, int dwFlags, int dwCompressionType, int dwCompressLevel);
 
-    boolean MpqAddFileFromBufferEx(Pointer hMPQ, Pointer lpBuffer, int dwLength, Pointer lpFileName, int dwFlags, int dwCompressionType, int dwCompressLevel);
+    boolean MpqAddFileFromBufferEx(Pointer hMPQ, byte[] lpBuffer, int dwLength, String lpFileName, int dwFlags, int dwCompressionType, int dwCompressLevel);
 
-    boolean MpqAddFileFromBuffer(Pointer hMPQ, Pointer lpBuffer, int dwLength, Pointer lpFileName, int dwFlags);
+    boolean MpqAddFileFromBuffer(Pointer hMPQ, byte[] lpBuffer, int dwLength, String lpFileName, int dwFlags);
 
-    boolean MpqAddWaveFromBuffer(Pointer hMPQ, Pointer lpBuffer, int dwLength, Pointer lpFileName, int dwFlags, int dwQuality);
+    boolean MpqAddWaveFromBuffer(Pointer hMPQ, byte[] lpBuffer, int dwLength, String lpFileName, int dwFlags, int dwQuality);
 
-    boolean MpqRenameAndSetFileLocale(Pointer hMPQ, Pointer lpcOldFileName, Pointer lpcNewFileName, int nOldLocale, int nNewLocale);
+    boolean MpqRenameAndSetFileLocale(Pointer hMPQ, String lpcOldFileName, String lpcNewFileName, int nOldLocale, int nNewLocale);
 
-    boolean MpqDeleteFileWithLocale(Pointer hMPQ, Pointer lpFileName, int nLocale);
+    boolean MpqDeleteFileWithLocale(Pointer hMPQ, String lpFileName, int nLocale);
 
-    boolean MpqSetFileLocale(Pointer hMPQ, Pointer lpFileName, int nOldLocale, int nNewLocale);
+    boolean MpqSetFileLocale(Pointer hMPQ, String lpFileName, int nOldLocale, int nNewLocale);
 }
