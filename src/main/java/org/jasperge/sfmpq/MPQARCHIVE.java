@@ -58,16 +58,16 @@ public class MPQARCHIVE extends Structure {
     public String lpFileName;
     public int dwExtraFlags;
 
+    public MPQARCHIVE(Pointer ptr) {
+        super(ptr);
+        read();
+    }
+
     protected List<String> getFieldOrder() {
         return Arrays.asList("lpNextArc", "lpPrevArc", "szFileName", "hFile", "dwFlags1", "dwPriority",
                 "lpLastReadFile", "dwUnk", "dwBlockSize", "lpLastReadBlock", "dwBufferSize", "dwMPQStart",
                 "dwMPQEnd", "lpMPQHeader", "lpBlockTable", "lpHashTable", "dwReadOffset", "dwRefCount", "MpqHeader",
                 "dwFlags", "lpFileName", "dwExtraFlags");
-    }
-
-    public MPQARCHIVE(Pointer ptr) {
-        super(ptr);
-        read();
     }
 
     public static class ByReference extends MPQARCHIVE implements Structure.ByReference {

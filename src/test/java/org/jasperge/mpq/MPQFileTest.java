@@ -3,32 +3,41 @@ package org.jasperge.mpq;
 import org.junit.Test;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class MPQFileTest {
+import static org.junit.Assert.assertTrue;
 
+public class MPQFileTest {
+    File mpq = new File("src/test/resources/patch_rt.mpq");
+    File tbl = new File("src/test/resources/stat_txt.tbl");
+    String hotkeyFileName = "rez\\stat_txt.tbl";
 
     @Test
     public void addToMPQTest() {
-        File mpq = new File("src/test/resources/patch_rt.mpq");
-        File tbl = new File("src/test/resources/stat_txt.tbl");
+        MPQEditor mpqEditor = new MPQEditor(mpq.getAbsolutePath());
 
-        MPQEditor mpqArchive = new MPQEditor(mpq.getAbsolutePath());
-
-        assert mpqArchive.addFile(tbl.getAbsolutePath(), "rez\\stat_txt.tbl");
-        assert mpqArchive.close();
+        assertTrue(mpqEditor.addFile(tbl.getAbsolutePath(), hotkeyFileName));
+        assertTrue(mpqEditor.close());
     }
 
     @Test
-    public void extractMPQTest() {
-        File mpq = new File("src/test/resources/patch_rt.mpq");
-
-        MPQEditor mpqArchive = new MPQEditor(mpq.getAbsolutePath());
-
-        List<MPQFile> files = mpqArchive.getFiles();
+    public void extractMPQTest() throws IOException {
+        MPQEditor mpqEditor = new MPQEditor(mpq.getAbsolutePath());
+        List<MPQFile> files = mpqEditor.getFiles();
         System.out.println(files.stream().map(f -> f.name).sorted().collect(Collectors.joining("\n")));
-        assert mpqArchive.close();
+
+        assertTrue(mpqEditor.extractFile(hotkeyFileName, null));
+
+        assertTrue(mpqEditor.close());
+    }
+
+    @Test
+    public void extractAllMPQTest() throws IOException {
+        MPQEditor mpqEditor = new MPQEditor(mpq.getAbsolutePath());
+        assertTrue(mpqEditor.extractAll("patch_rt"));
+        assertTrue(mpqEditor.close());
     }
 
 }

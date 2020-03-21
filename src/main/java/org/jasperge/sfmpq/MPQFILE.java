@@ -46,6 +46,11 @@ public class MPQFILE extends Structure {
         public Pointer lpHashEntry;
         public String lpFileName;
 
+        public MPQFILE(Pointer ptr) {
+                super(ptr);
+                read();
+        }
+
         protected List<String> getFieldOrder() {
                 return Arrays.asList("lpNextFile", "lpPrevFile", "szFileName", "hFile", "lpParentArc", "lpBlockEntry",
                         "dwCryptKey", "dwFilePointer", "dwUnk", "dwBlockCount", "lpdwBlockOffsets", "dwReadStarted",
@@ -53,5 +58,9 @@ public class MPQFILE extends Structure {
                         "lpFileName");
         }
 
-        public static class ByReference extends MPQFILE implements Structure.ByReference {}
+        public static class ByReference extends MPQFILE implements Structure.ByReference {
+                public ByReference(Pointer ptr) {
+                        super(ptr);
+                }
+        }
 }

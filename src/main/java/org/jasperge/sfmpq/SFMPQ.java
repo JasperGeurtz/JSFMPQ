@@ -3,6 +3,7 @@ package org.jasperge.sfmpq;
 import com.sun.jna.Library;
 import com.sun.jna.Native;
 import com.sun.jna.Pointer;
+import com.sun.jna.ptr.IntByReference;
 import com.sun.jna.ptr.PointerByReference;
 
 /**
@@ -136,7 +137,7 @@ public interface SFMPQ extends Library {
 
     int SFileSetFilePointer(Pointer hFile, long lDistanceToMove, Pointer lplDistanceToMoveHigh, int dwMoveMethod);
 
-    boolean SFileReadFile(Pointer hFile, byte[] lpBuffer, int nNumberOfBytesToRead, Pointer lpNumberOfBytesRead, int lpOverlapped); //NOTE: set overLapped to 0
+    boolean SFileReadFile(Pointer hFile, byte[] lpBuffer, int nNumberOfBytesToRead, IntByReference lpNumberOfBytesRead, int lpOverlapped); //NOTE: set overLapped to 0
 
     int SFileSetLocale(int nNewLocale);
 

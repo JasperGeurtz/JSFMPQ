@@ -1,29 +1,29 @@
 package org.jasperge.mpq;
 
 import com.sun.jna.Pointer;
-import org.jasperge.sfmpq.FILELISTENTRY;
-import org.jasperge.sfmpq.MPQARCHIVE;
-import org.jasperge.sfmpq.SFMPQVERSION;
-import org.junit.Assert;
+import com.sun.jna.ptr.IntByReference;
+import org.jasperge.sfmpq.*;
 import org.junit.Test;
 
 import java.io.File;
 import java.util.List;
 
 import static org.jasperge.sfmpq.SFMPQ.*;
+import static org.junit.Assert.*;
 
 public class SFMPQTest {
     String archivePath = new File("src/test/resources/patch_rt.mpq").getAbsolutePath();
     String filePath = new File("src/test/resources/stat_txt.tbl").getAbsolutePath();
+    String hotkeyFileName = "rez\\stat_txt.tbl";
     SFMPQWrapper sfmpq = new SFMPQWrapper();
 
     @Test
     public void testAppending() {
-        Assert.assertEquals(2.0, sfmpq.getVersionFloat(), 0.0001);
-        Assert.assertEquals("ShadowFlare MPQ API Library v1.08", sfmpq.getVersionString());
+        assertEquals(2.0, sfmpq.getVersionFloat(), 0.0001);
+        assertEquals("ShadowFlare MPQ API Library v1.08", sfmpq.getVersionString());
 
         SFMPQVERSION v = sfmpq.getVersionStruct();
-        Assert.assertArrayEquals(new short[]{1, 0 , 8, 1}, new short[]{v.Major, v.Minor, v.Revision, v.Subrevision});
+        assertArrayEquals(new short[]{1, 0 , 8, 1}, new short[]{v.Major, v.Minor, v.Revision, v.Subrevision});
 
         Pointer archive = sfmpq.openArchiveForUpdate(archivePath, MOAU_OPEN_EXISTING, 262144);
         System.out.println(archive);
@@ -38,17 +38,46 @@ public class SFMPQTest {
         Pointer archivePtr = sfmpq.openArchive(archivePath, 0, SFILE_OPEN_HARD_DISK_FILE);
         MPQARCHIVE archive = new MPQARCHIVE.ByReference(archivePtr);
 
-        Assert.assertEquals(new String(archive.szFileName).trim(), archivePath);
+        assertEquals(new String(archive.szFileName).trim(), archivePath);
 
         //System.out.println(a);
         List<FILELISTENTRY> files = sfmpq.listFiles(archivePtr);
 
-        Assert.assertTrue(files.stream().map(m -> (new String(m.szFileName)).trim())
-                .anyMatch(n -> n.equals("rez\\stat_txt.tbl")));
+        assertTrue(files.stream().map(m -> (new String(m.szFileName)).trim())
+                .anyMatch(n -> n.equals(hotkeyFileName)));
 
-        Assert.assertEquals(89, files.size());
+        assertEquals(89, files.size());
 
-        Assert.assertTrue(sfmpq.closeArchive(archivePtr));
+        assertTrue(sfmpq.closeArchive(archivePtr));
+    }
+
+    @Test
+    public void testExtract() {
+        Pointer archivePtr = sfmpq.openArchive(archivePath, 0, SFILE_OPEN_HARD_DISK_FILE);
+
+        try {
+            Pointer filePtr = sfmpq.openFileEx(archivePtr, hotkeyFileName, 0);
+            MPQFILE file = new MPQFILE.ByReference(filePtr);
+            assertEquals(hotkeyFileName, file.lpFileName);
+            assertEquals(hotkeyFileName, new String(file.szFileName).trim());
+
+            int fileSize = sfmpq.getFileSize(filePtr, null);
+
+            byte[] buffer = new byte[fileSize];
+            if (fileSize > 0) {
+                boolean ret = sfmpq.readFile(filePtr, buffer, fileSize, new IntByReference(), 0);
+            }
+//            try (FileOutputStream fos = new FileOutputStream(hotkeyFileName.replace("\\", "_"))) {
+//                if (fileSize != 0) {
+//                    fos.write(buffer);
+//                }
+//            }
+            assertTrue(sfmpq.closeFile(filePtr));
+        }
+        catch (Exception e) {
+            e.printStackTrace();
+        }
+        assertTrue(sfmpq.closeArchive(archivePtr));
     }
 
 
