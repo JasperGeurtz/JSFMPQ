@@ -9,7 +9,7 @@ import static org.jasperge.sfmpq.SFMPQ.*;
 
 public class MPQEditor {
     final SFMPQWrapper sfmpq = new SFMPQWrapper();
-    Pointer archive;
+    private final Pointer archive;
 
     /**
      * fails if doesn't exist
@@ -22,17 +22,17 @@ public class MPQEditor {
     /**
      * Add file to Archive: WILL REPLACE!
      */
-    boolean addFile(String sourceFileName, String destFileName) {
+    public boolean addFile(String sourceFileName, String destFileName) {
         return sfmpq.addFileToArchive(archive, sourceFileName, destFileName, MAFA_REPLACE_EXISTING);
     }
 
-    List<MPQFile> getFiles() {
+    public List<MPQFile> getFiles() {
         return sfmpq.listFiles(archive).stream()
                 .map(MPQFile::new)
                 .collect(Collectors.toList());
     }
 
-    boolean close() {
+    public boolean close() {
         return sfmpq.closeUpdatedArchive(archive) == 1;
     }
 
