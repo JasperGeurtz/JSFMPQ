@@ -10,7 +10,7 @@ import com.sun.jna.ptr.PointerByReference;
  * https://sfsrealm.hopto.org/inside_mopaq/chapter4.htm
  */
 public interface SFMPQ extends Library {
-    static SFMPQ instantiate() {
+    static SFMPQ getInstance() {
         String dllName = System.getProperty("sun.arch.data.model").equals("64") ? "SFmpq64" : "SFmpq";
         return Native.load(dllName, SFMPQ.class);
     }
@@ -22,12 +22,6 @@ public interface SFMPQ extends Library {
     String SFMpqGetVersionString(); //LPCSTR SFMPQAPI WINAPI SFMpqGetVersionString();
 
     SFMPQVERSION.ByValue SFMpqGetVersion(); // SFMPQVERSION SFMPQAPI WINAPI SFMpqGetVersion();
-
-    /**
-     * Returns 0 if the dll version is equal to the version your program was compiled
-     * with, 1 if the dll is newer, -1 if the dll is older.
-     */
-    long SFMpqCompareVersion(); //long SFMPQAPI __inline SFMpqCompareVersion();
 
     // General error codes
     int MPQ_ERROR_MPQ_INVALID = 0x85200065;

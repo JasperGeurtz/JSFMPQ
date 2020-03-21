@@ -10,7 +10,7 @@ public class MPQFILE extends Structure {
         //[TYPE=MPQFILE.ByReference]
         public Pointer lpNextFile; //0// Pointer to the next MPQFILE struct. Pointer to addresses of first and last files if last file
 
-        //[TYPE=MPQFILE.ByReference]
+        //[TYPE=MPQFILE.ByReference]  [Pointer.nativeValue(lpPrevFile) == 0xEAFC5E13]
         public Pointer lpPrevFile; //4// Pointer to the previous MPQFILE struct. 0xEAFC5E13 if first file
         public byte[] szFileName = new byte[260]; //8// Filename of the file
 

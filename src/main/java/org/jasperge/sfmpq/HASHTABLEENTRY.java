@@ -11,11 +11,6 @@ public class HASHTABLEENTRY extends Structure {
     public int lcLocale; // Locale ID of file
     public int dwBlockTableIndex; // Index to the block table entry for the file
 
-    public HASHTABLEENTRY() {
-        super();
-        read();
-    }
-
     protected List<String> getFieldOrder() {
         return Arrays.asList("dwNameHashA", "dwNameHashB", "lcLocale", "dwBlockTableIndex");
     }

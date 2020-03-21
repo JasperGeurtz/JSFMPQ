@@ -16,7 +16,8 @@ import java.util.stream.Collectors;
 import static org.jasperge.sfmpq.SFMPQ.SFILE_INFO_HASH_TABLE_SIZE;
 
 public class SFMPQWrapper {
-    public SFMPQ sfmpq = SFMPQ.instantiate();
+    private static SFMPQ sfmpq = SFMPQ.getInstance(); //only 1 instance
+
     public String listFile = new File("Listfile.txt").getAbsolutePath();
 
     public String getVersionString() {
