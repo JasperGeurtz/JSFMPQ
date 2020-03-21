@@ -1,0 +1,1547 @@
+Terran Marine<0>*<0>Ground Units<0>
+Terran Ghost<0>*<0>Ground Units<0>
+Terran Vulture<0>*<0>Ground Units<0>
+Terran Goliath<0>*<0>Ground Units<0>
+Goliath Turret<0>*<0>*<0>
+Terran Siege Tank<0>Tank Mode<0>Ground Units<0>
+Tank Turret<0>*<0>*<0>
+Terran SCV<0>*<0>Ground Units<0>
+Terran Wraith<0>*<0>Air Units<0>
+Terran Science Vessel<0>*<0>Air Units<0>
+Gui Montag<0>Firebat<0>Heroes<0>
+Terran Dropship<0>*<0>Air Units<0>
+Terran Battlecruiser<0>*<0>Air Units<0>
+Vulture Spider Mine<0>*<0>Special<0>
+Nuclear Missile<0>*<0>Special<0>
+Terran Civilian<0>*<0>Heroes<0>
+Sarah Kerrigan<0>Ghost<0>Heroes<0>
+Alan Schezar<0>Goliath<0>Heroes<0>
+Alan Turret<0>*<0>*<0>
+Jim Raynor<0>Vulture<0>Heroes<0>
+Jim Raynor<0>Marine<0>Heroes<0>
+Tom Kazansky<0>Wraith<0>Heroes<0>
+Magellan<0>Science Vessel<0>Heroes<0>
+Edmund Duke<0>Siege Tank<0>Heroes<0>
+Duke Turret<0>*<0>*<0>
+Edmund Duke<0>Siege Mode<0>Heroes<0>
+Duke Turret<0>*<0>*<0>
+Arcturus Mengsk<0>Battlecruiser<0>Heroes<0>
+Hyperion<0>Battlecruiser<0>Heroes<0>
+Norad II<0>Battlecruiser<0>Heroes<0>
+Terran Siege Tank<0>Siege Mode<0>Ground Units<0>
+Tank Turret<0>*<0>*<0>
+Terran Firebat<0>*<0>Ground Units<0>
+Scanner Sweep<0>*<0>*<0>
+Terran Medic<0>*<0>Ground Units<0>
+Zerg Larva<0>*<0>*<0>
+Zerg Egg<0>*<0>*<0>
+Zerg Zergling<0>*<0>Ground Units<0>
+Zerg Hydralisk<0>*<0>Ground Units<0>
+Zerg Ultralisk<0>*<0>Ground Units<0>
+Zerg Broodling<0>*<0>Ground Units<0>
+Zerg Drone<0>*<0>Ground Units<0>
+Zerg Overlord<0>*<0>Air Units<0>
+Zerg Mutalisk<0>*<0>Air Units<0>
+Zerg Guardian<0>*<0>Air Units<0>
+Zerg Queen<0>*<0>Air Units<0>
+Zerg Defiler<0>*<0>Ground Units<0>
+Zerg Scourge<0>*<0>Air Units<0>
+Torrasque<0>Ultralisk<0>Heroes<0>
+Matriarch<0>Queen<0>Heroes<0>
+Infested Terran<0>*<0>Ground Units<0>
+Infested Kerrigan<0>Infested Terran<0>Heroes<0>
+Unclean One<0>Defiler<0>Heroes<0>
+Hunter Killer<0>Hydralisk<0>Heroes<0>
+Devouring One<0>Zergling<0>Heroes<0>
+Kukulza<0>Mutalisk<0>Heroes<0>
+Kukulza<0>Guardian<0>Heroes<0>
+Yggdrasill<0>Overlord<0>Heroes<0>
+Terran Valkyrie<0>*<0>Air Units<0>
+Cocoon<0>*<0>*<0>
+Protoss Corsair<0>*<0>Air Units<0>
+Protoss Dark Templar<0>*<0>Ground Units<0>
+Zerg Devourer<0>*<0>Air Units<0>
+Protoss Dark Archon<0>*<0>Ground Units<0>
+Protoss Probe<0>*<0>Ground Units<0>
+Protoss Zealot<0>*<0>Ground Units<0>
+Protoss Dragoon<0>*<0>Ground Units<0>
+Protoss High Templar<0>*<0>Ground Units<0>
+Protoss Archon<0>*<0>Ground Units<0>
+Protoss Shuttle<0>*<0>Air Units<0>
+Protoss Scout<0>*<0>Air Units<0>
+Protoss Arbiter<0>*<0>Air Units<0>
+Protoss Carrier<0>*<0>Air Units<0>
+Protoss Interceptor<0>*<0>Air Units<0>
+Dark Templar<0>Hero<0>Heroes<0>
+Zeratul<0>Dark Templar<0>Heroes<0>
+Tassadar/Zeratul<0>Archon<0>Heroes<0>
+Fenix<0>Zealot<0>Heroes<0>
+Fenix<0>Dragoon<0>Heroes<0>
+Tassadar<0>Templar<0>Heroes<0>
+Mojo<0>Scout<0>Heroes<0>
+Warbringer<0>Reaver<0>Heroes<0>
+Gantrithor<0>Carrier<0>Heroes<0>
+Protoss Reaver<0>*<0>Ground Units<0>
+Protoss Observer<0>*<0>Air Units<0>
+Protoss Scarab<0>*<0>Ground Units<0>
+Danimoth<0>Arbiter<0>Heroes<0>
+Aldaris<0>Templar<0>Heroes<0>
+Artanis<0>Scout<0>Heroes<0>
+Rhynadon<0>Badlands<0>Critters<0>
+Bengalaas<0>Jungle<0>Critters<0>
+Unused<0>*<0>*<0>
+Unused<0>*<0>*<0>
+Scantid<0>Desert<0>Critters<0>
+Kakaru<0>Twilight<0>Critters<0>
+Ragnasaur<0>Ash World<0>Critters<0>
+Ursadon<0>Ice World<0>Critters<0>
+Zerg Lurker Egg<0>*<0>*<0>
+Raszagal<0>Dark Templar<0>Heroes<0>
+Samir Duran<0>Ghost<0>Heroes<0>
+Alexei Stukov<0>Ghost<0>Heroes<0>
+Map Revealer<0>*<0>Special<0>
+Gerard DuGalle<0>Ghost<0>Heroes<0>
+Zerg Lurker<0>*<0>Ground Units<0>
+Infested Duran<0>*<0>Heroes<0>
+Disruption Field<0>*<0>Protoss<0>
+Terran Command Center<0>*<0>Buildings<0>
+Terran Comsat Station<0>*<0>Addons<0>
+Terran Nuclear Silo<0>*<0>Addons<0>
+Terran Supply Depot<0>*<0>Buildings<0>
+Terran Refinery<0>*<0>Buildings<0>
+Terran Barracks<0>*<0>Buildings<0>
+Terran Academy<0>*<0>Buildings<0>
+Terran Factory<0>*<0>Buildings<0>
+Terran Starport<0>*<0>Buildings<0>
+Terran Control Tower<0>*<0>Addons<0>
+Terran Science Facility<0>*<0>Buildings<0>
+Terran Covert Ops<0>*<0>Addons<0>
+Terran Physics Lab<0>*<0>Addons<0>
+Unused Terran Bldg<0>*<0>*<0>
+Terran Machine Shop<0>*<0>Addons<0>
+Unused Terran Bldg<0>*<0>Terran<0>
+Terran Engineering Bay<0>*<0>Buildings<0>
+Terran Armory<0>*<0>Buildings<0>
+Terran Missile Turret<0>*<0>Buildings<0>
+Terran Bunker<0>*<0>Buildings<0>
+Norad II<0>Crashed Battlecruiser<0>Special Buildings<0>
+Ion Cannon<0>*<0>Special Buildings<0>
+Uraj Crystal<0>*<0>Powerups<0>
+Khalis Crystal<0>*<0>Powerups<0>
+Infested Command Center<0>*<0>Buildings<0>
+Zerg Hatchery<0>*<0>Buildings<0>
+Zerg Lair<0>*<0>Buildings<0>
+Zerg Hive<0>*<0>Buildings<0>
+Zerg Nydus Canal<0>*<0>Buildings<0>
+Zerg Hydralisk Den<0>*<0>Buildings<0>
+Zerg Defiler Mound<0>*<0>Buildings<0>
+Zerg Greater Spire<0>*<0>Buildings<0>
+Zerg Queen's Nest<0>*<0>Buildings<0>
+Zerg Evolution Chamber<0>*<0>Buildings<0>
+Zerg Ultralisk Cavern<0>*<0>Buildings<0>
+Zerg Spire<0>*<0>Buildings<0>
+Zerg Spawning Pool<0>*<0>Buildings<0>
+Zerg Creep Colony<0>*<0>Buildings<0>
+Zerg Spore Colony<0>*<0>Buildings<0>
+Unused Zerg Bldg<0>*<0>Zerg<0>
+Zerg Sunken Colony<0>*<0>Buildings<0>
+Zerg Overmind<0>With Shell<0>Special Buildings<0>
+Zerg Overmind<0>*<0>Special Buildings<0>
+Zerg Extractor<0>*<0>Buildings<0>
+Mature Crysalis<0>*<0>Special Buildings<0>
+Zerg Cerebrate<0>*<0>Special Buildings<0>
+Zerg Cerebrate Daggoth<0>*<0>Special Buildings<0>
+Unused Zerg Bldg 5<0>*<0>Zerg<0>
+Protoss Nexus<0>*<0>Buildings<0>
+Protoss Robotics Facility<0>*<0>Buildings<0>
+Protoss Pylon<0>*<0>Buildings<0>
+Protoss Assimilator<0>*<0>Buildings<0>
+Protoss Unused<0>*<0>Protoss<0>
+Protoss Observatory<0>*<0>Buildings<0>
+Protoss Gateway<0>*<0>Buildings<0>
+Protoss Unused<0>*<0>Protoss<0>
+Protoss Photon Cannon<0>*<0>Buildings<0>
+Protoss Citadel of Adun<0>*<0>Buildings<0>
+Protoss Cybernetics Core<0>*<0>Buildings<0>
+Protoss Templar Archives<0>*<0>Buildings<0>
+Protoss Forge<0>*<0>Buildings<0>
+Protoss Stargate<0>*<0>Buildings<0>
+Stasis Cell/Prison<0>*<0>Special Buildings<0>
+Protoss Fleet Beacon<0>*<0>Buildings<0>
+Protoss Arbiter Tribunal<0>*<0>Buildings<0>
+Protoss Robotics Support Bay<0>*<0>Buildings<0>
+Protoss Shield Battery<0>*<0>Buildings<0>
+Khaydarin Crystal Formation<0>*<0>Special Buildings<0>
+Protoss Temple<0>*<0>Special Buildings<0>
+Xel'Naga Temple<0>*<0>Special Buildings<0>
+Mineral Field<0>Type 1<0>Resources<0>
+Mineral Field<0>Type 2<0>Resources<0>
+Mineral Field<0>Type 3<0>Resources<0>
+Cave<0>*<0>Neutral<0>
+Cave-in<0>*<0>Neutral<0>
+Cantina<0>*<0>Neutral<0>
+Mining Platform<0>*<0>Neutral<0>
+Independent Command Center<0>*<0>Independent<0>
+Independent Starport<0>*<0>Independent<0>
+Jump Gate<0>*<0>Neutral<0>
+Ruins<0>*<0>Neutral<0>
+Kyadarin Crystal Formation<0>*<0>Neutral<0>
+Vespene Geyser<0>*<0>Resources<0>
+Warp Gate<0>*<0>Special Buildings<0>
+Psi Disrupter<0>*<0>Special Buildings<0>
+Zerg Marker<0>*<0>Special<0>
+Terran Marker<0>*<0>Special<0>
+Protoss Marker<0>*<0>Special<0>
+Zerg Beacon<0>*<0>Special<0>
+Terran Beacon<0>*<0>Special<0>
+Protoss Beacon<0>*<0>Special<0>
+Zerg Flag Beacon<0>*<0>Special<0>
+Terran Flag Beacon<0>*<0>Special<0>
+Protoss Flag Beacon<0>*<0>Special<0>
+Power Generator<0>*<0>Special Buildings<0>
+Overmind Cocoon<0>*<0>Special Buildings<0>
+Dark Swarm<0>*<0>Zerg<0>
+Floor Missile Trap<0>*<0>Doodads<0>
+Floor Hatch (UNUSED)<0>*<0>Doodads<0>
+Left Upper Level Door<0>*<0>Doodads<0>
+Right Upper Level Door<0>*<0>Doodads<0>
+Left Pit Door<0>*<0>Doodads<0>
+Right Pit Door<0>*<0>Doodads<0>
+Floor Gun Trap<0>*<0>Doodads<0>
+Left Wall Missile Trap<0>*<0>Doodads<0>
+Left Wall Flame Trap<0>*<0>Doodads<0>
+Right Wall Missile Trap<0>*<0>Doodads<0>
+Right Wall Flame Trap<0>*<0>Doodads<0>
+Start Location<0>*<0>Start Location<0>
+Flag<0>*<0>Special<0>
+Young Chrysalis<0>*<0>Powerups<0>
+Psi Emitter<0>*<0>Powerups<0>
+Data Disc<0>*<0>Powerups<0>
+Khaydarin Crystal<0>*<0>Powerups<0>
+Mineral Chunk<0>Type 1<0>Resources<0>
+Mineral Chunk<0>Type 2<0>Resources<0>
+Vespene Orb<0>Protoss Type 1<0>Resources<0>
+Vespene Orb<0>Protoss Type 2<0>Resources<0>
+Vespene Sac<0>Zerg Type 1<0>Resources<0>
+Vespene Sac<0>Zerg Type 2<0>Resources<0>
+Vespene Tank<0>Terran Type 1<0>Resources<0>
+Vespene Tank<0>Terran Type 2<0>Resources<0>
+Gauss Rifle<0>
+Gauss Rifle<0>
+C-10 Canister Rifle<0>
+C-10 Canister Rifle<0>
+Fragmentation Grenade<0>
+Fragmentation Grenade<0>
+Twin Autocannons<0>
+Hellfire Missile Pack<0>
+Twin Autocannons<0>
+Hellfire Missile Pack<0>
+Arclite Cannon<0>
+Arclite Cannon<0>
+Fusion Cutter<0>
+Fusion Cutter<0>
+Gemini Missiles<0>
+Burst Lasers<0>
+Gemini Missiles<0>
+Burst Lasers<0>
+ATS Laser Battery<0>
+ATA Laser Battery<0>
+ATS Laser Battery<0>
+ATA Laser Battery<0>
+ATS Laser Battery<0>
+ATA Laser Battery<0>
+Flame Thrower<0>
+Flame Thrower<0>
+Arclite Shock Cannon<0>
+Arclite Shock Cannon<0>
+Longbolt Missile<0>
+Nuclear Strike<0>
+EMP Shockwave<0>
+Claws<0>
+Claws<0>
+Claws<0>
+Needle Spines<0>
+Needle Spines<0>
+Kaiser Blades<0>
+Kaiser Blades<0>
+Toxic Spores<0>
+Spines<0>
+Acid Spray<0>
+Acid Spray<0>
+Acid Spore<0>
+Acid Spore<0>
+Glave Wurm<0>
+Glave Wurm<0>
+Venom<0>
+Venom<0>
+Suicide<0>
+Seeker Spores<0>
+Subterranean Tentacle<0>
+Suicide<0>
+Particle Beam<0>
+Psi Blades<0>
+Psi Blades<0>
+Warp Blades<0>
+Warp Blades<0>
+Phase Disruptor<0>
+Phase Disruptor<0>
+Psi Assault<0>
+Psi Assault<0>
+Psionic Shockwave<0>
+Psionic Shockwave<0>
+Unused<0>
+Dual Photon Blasters<0>
+Anti-matter Missiles<0>
+Dual Photon Blasters<0>
+Anti-matter Missiles<0>
+Phase Disruptor Cannon<0>
+Phase Disruptor Cannon<0>
+Pulse Cannon<0>
+STS Photon Cannon<0>
+STA Photon Cannon<0>
+Scarab<0>
+Missiles<0>
+Laser Battery<0>
+Tormentor Missiles<0>
+Bombs<0>
+Raider Gun<0>
+Flechette Grenade<0>
+Twin Autocannons<0>
+Hellfire Missile Pack<0>
+Flame Thrower<0>
+Undefined Weapon Name<0>
+Stim Packs<0>
+Lockdown<0>
+EMP Shockwave<0>
+Spider Mines<0>
+Scanner Sweep<0>
+Tank Siege Mode<0>
+Defensive Matrix<0>
+Irradiate<0>
+Yamato Gun<0>
+Cloaking Field<0>
+Personnel Cloaking<0>
+t<4>Research S<3>t<1>im Pack Tech<10>(Marine and Firebat ability)<0>
+l<4>Research <3>L<1>ockdown<10>(Ghost ability)<0>
+e<4>Research <3>E<1>MP Shockwave<10>(Science Vessel ability)<0>
+m<4>Research Spider <3>M<1>ines<10>(Vulture ability)<0>
+s<4>Research <3>S<1>iege Tech<10>(Siege Tank ability)<0>
+m<4>Research Defensive <3>M<1>atrix<10>(Science Vessel ability)<0>
+i<4>Research <3>I<1>rradiate<10>(Science Vessel ability)<0>
+y<4>Research <3>Y<1>amato Gun<10>(Battlecruiser ability)<0>
+c<4>Research <3>C<1>loaking Field<10>(Wraith ability)<0>
+c<4>Research Personnel <3>C<1>loaking<10>(Ghost ability)<0>
+t<3>Use S<3>t<1>im Packs<0>
+l<3><3>L<1>ockdown<0>
+i<3>Use Spider M<3>i<1>nes<0>
+s<3><3>S<1>canner Sweep (Detector)<0>
+o<3>Siege M<3>o<1>de<0>
+o<0>Tank M<3>o<1>de<0>
+d<3>Activate <3>D<1>efensive Matrix<0>
+l<3>Ha<3>l<1>lucination<0>
+i<3><3>I<1>rradiate<0>
+y<3><3>Y<1>amato Gun<0>
+c<3><3>C<1>loak<0>
+c<0>De<3>c<1>loak<0>
+Stim Packs:<10>   Research at Academy<0>
+Lockdown:<10>   Research at Covert Ops<0>
+Spider Mines:<10>   Research at Machine Shop<0>
+Siege Mode:<10>   Research at Machine Shop<0>
+Defensive Matrix:<10>   Research at Science Facility<0>
+EMP Shockwave:<10>   Research at Science Facility<0>
+Irradiate:<10>   Research at Science Facility<0>
+Yamato Gun:<10>   Research at Physics Lab<0>
+Cloaking Field:<10>   Research at Control Tower<0>
+Personnel Cloaking:<10>   Research at Covert Ops<0>
+Burrowing<0>
+Infestation<0>
+Spawn Broodling<0>
+Dark Swarm<0>
+Parasite<0>
+Plague<0>
+Consume<0>
+Ensnare<0>
+b<4>Evolve <3>B<1>urrow<10>(Ground unit ability)<0>
+i<4>Evolve <3>I<1>nfestation<10>(Queen ability)<0>
+b<4>Evolve Spawn <3>B<1>roodling<10>(Queen ability)<0>
+s<4>Evolve Dark <3>S<1>warm<10>(Defiler ability)<0>
+r<4>Evolve Pa<3>r<1>asite<10>(Queen ability)<0>
+g<4>Evolve Pla<3>g<1>ue<10>(Defiler ability)<0>
+e<4>Evolve <3>E<1>nsnare<10>(Queen ability)<0>
+c<4>Evolve <3>C<1>onsume<10>(Defiler ability)<0>
+u<3>B<3>u<1>rrow<0>
+u<0><3>U<1>nburrow<0>
+i<0><3>I<1>nfest Terran Command Center<0>
+b<3>Spawn <3>B<1>roodlings<0>
+w<3>Dark S<3>w<1>arm<0>
+r<3>Pa<3>r<1>asite<0>
+g<3>Pla<3>g<1>ue<0>
+c<3><3>C<1>onsume<0>
+u<3>Cons<3>u<1>me<0>
+e<3><3>E<1>nsnare<0>
+Burrow:<10>   Evolve at Hatchery<0>
+Infest:<10>   Evolve at Queen's Nest<0>
+Spawn Broodlings:<10>   Evolve at Queen's Nest<0>
+Dark Swarm:<10>   Evolve at Defiler Mound<0>
+Parasite:<10>   Evolve at Queen's Nest<0>
+Plague:<10>   Evolve at Defiler Mound<0>
+Consume:<10>       Evolve at Defiler Mound<0>
+Ensnare:<10>   Evolve at Queen's Nest<0>
+Psionic Storm<0>
+Hallucination<0>
+Recall<0>
+Stasis Field<0>
+Archon Warp<0>
+p<4>Develop <3>P<1>sionic Storm<10>(Templar ability)<0>
+h<4>Develop <3>H<1>allucination<10>(Templar ability)<0>
+r<4>Develop <3>R<1>ecall<10>(Arbiter ability)<0>
+s<4>Develop <3>S<1>tasis Field<10>(Arbiter ability)<0>
+a<4>Develop <3>A<1>rchon Warp<10>(Templar ability)<0>
+t<3>Psionic S<3>t<1>orm<0>
+l<3>Ha<3>l<1>lucination<0>
+r<3><3>R<1>ecall<0>
+t<3>S<3>t<1>asis Field<0>
+r<1>A<3>r<1>chon Warp<0>
+Psionic Storm:<10>   Develop at Templar Archives<0>
+Hallucination:<10>   Develop at Templar Archives<0>
+Recall:<10>   Develop at Arbiter Tribunal<0>
+Stasis Field:<10>   Develop at Arbiter Tribunal<0>
+Archon Warp:<10>   Research at Templar Archives<0>
+Archon Warp:<10>   Select 2 or more Templars<0>
+Terran Infantry Armor<0>
+Terran Vehicle Plating<0>
+Terran Ship Plating<0>
+Zerg Carapace<0>
+Zerg Flyer Carapace<0>
+Protoss Armor<0>
+Protoss Plating<0>
+Terran Infantry Weapons<0>
+Terran Vehicle Weapons<0>
+Terran Ship Weapons<0>
+Zerg Melee Attacks<0>
+Zerg Missile Attacks<0>
+Zerg Flyer Attacks<0>
+Protoss Ground Weapons<0>
+Protoss Air Weapons<0>
+Protoss Plasma Shields<0>
+U-238 Shells<0>
+Ion Thrusters<0>
+Burst Lasers<0>
+Titan Reactor<0>
+Ocular Implants<0>
+Moebius Reactor<0>
+Apollo Reactor<0>
+Colossus Reactor<0>
+Ventral Sacs<0>
+Antennae<0>
+Pneumatized Carapace<0>
+Metabolic Boost<0>
+Adrenal Glands<0>
+Muscular Augments<0>
+Grooved Spines<0>
+Gamete Meiosis<0>
+Metasynaptic Node<0>
+Singularity Charge<0>
+Leg Enhancements<0>
+Scarab Damage<0>
+Reaver Capacity<0>
+Gravitic Drive<0>
+Sensor Array<0>
+Gravitic Boosters<0>
+Khaydarin Amulet<0>
+Apial Sensors<0>
+Gravitic Thrusters<0>
+Carrier Capacity<0>
+Khaydarin Core<0>
+a<2>Upgrade Infantry <3>A<1>rmor<0>
+p<2>Upgrade Vehicle <3>P<1>lating<0>
+h<2>Upgrade S<3>h<1>ip Plating<0>
+c<2>Evolve <3>C<1>arapace<0>
+c<2>Evolve Flyer <3>C<1>arapace<0>
+a<2>Upgrade Ground <3>A<1>rmor<0>
+a<2>Upgrade Air <3>A<1>rmor<0>
+w<2>Upgrade Infantry <3>W<1>eapons<0>
+w<2>Upgrade Vehicle <3>W<1>eapons<0>
+s<2>Upgrade <3>S<1>hip Weapons<0>
+m<2>Upgrade <3>M<1>elee Attacks<0>
+a<2>Upgrade Missile <3>A<1>ttacks<0>
+a<2>Upgrade Flyer <3>A<1>ttacks<0>
+w<2>Upgrade Ground <3>W<1>eapons<0>
+w<2>Upgrade Air <3>W<1>eapons<0>
+s<2>Upgrade Plasma <3>S<1>hields<0>
+u<2>Research <3>U<1>-238 Shells<10>(Increase Marine attack range)<0>
+i<2>Research <3>I<1>on Thrusters<10>(Faster Vulture movement)<0>
+b<2>Research <3>B<1>urst Lasers<10>(Wraith Weapon)<0>
+t<2>Research <3>T<1>itan Reactor<10>(+50 Science Vessel energy)<0>
+o<2>Research <3>O<1>cular Implants<10>(Increase Ghost sight range)<0>
+m<2>Research <3>M<1>oebius Reactor<10>(+50 Ghost energy)<0>
+a<2>Research <3>A<1>pollo Reactor<10>(+50 Wraith energy)<0>
+c<2>Research <3>C<1>olossus Reactor<10>(+50 Battlecruiser energy)<0>
+v<2>Evolve <3>V<1>entral Sacs<10>(Transporting for Overlord)<0>
+a<2>Evolve <3>A<1>ntennae<10>(Increase Overlord sight range)<0>
+p<2>Evolve <3>P<1>neumatized Carapace<10>(Faster Overlord movement)<0>
+m<2>Evolve <3>M<1>etabolic Boost<10>(Faster Zergling movement)<0>
+a<2>Evolve <3>A<1>drenal Glands<10>(Faster Zergling Attack)<0>
+m<2>Evolve <3>M<1>uscular Augments<10>(Faster Hydralisk movement)<0>
+g<2>Evolve <3>G<1>rooved Spines<10>(Increase Hydralisk attack range)<0>
+g<2>Evolve <3>G<1>amete Meiosis<10>(+50 Queen energy)<0>
+m<2>Evolve <3>M<1>etasynaptic Node<10>(+50 Defiler energy)<0>
+s<2>Develop <3>S<1>ingularity Charge<10>(Increase Dragoon attack range)<0>
+l<2>Develop <3>L<1>eg Enhancements<10>(Faster Zealot movement)<0>
+s<2>Upgrade <3>S<1>carab Damage<0>
+c<2>Increase Reaver <3>C<1>apacity<10>(+5 Max Scarabs)<0>
+g<2>Develop <3>G<1>ravitic Drive<10>(Faster Shuttle movement)<0>
+s<2>Develop <3>S<1>ensor Array<10>(Increase Observer sight range)<0>
+g<2>Develop <3>G<1>ravitic Booster<10>(Faster Observer movement)<0>
+k<2>Develop <3>K<1>haydarin Amulet<10>(+50 Templar energy)<0>
+a<2>Develop <3>A<1>pial Sensors<10>(Increase Scout sight range)<0>
+g<2>Develop <3>G<1>ravitic Thrusters<10>(Faster Scout movement)<0>
+c<2>Increase <3>C<1>arrier Capacity<10>(+4 Max Interceptors)<0>
+k<2>Develop <3>K<1>haydarin Core<10>(+50 Arbiter energy)<0>
+Infantry Armor L1 Require:<10>   Nothing<0>
+Infantry Armor L2 Require:<10>   Science Facility<0>
+Infantry Armor L3 Require:<10>   Science Facility<0>
+Infantry Weapons L1 Require:<10>   Nothing<0>
+Infantry Weapons L2 Require:<10>   Science Facility<0>
+Infantry Weapons L3 Require:<10>   Science Facility<0>
+Vehicle Weapons L1 Require:<10>   Nothing<0>
+Vehicle Weapons L2 Require:<10>   Science Facility<0>
+Vehicle Weapons L3 Require:<10>   Science Facility<0>
+Vehicle Plating L1 Requires:<10>   Nothing<0>
+Vehicle Plating L2 Requires:<10>   Science Facility<0>
+Vehicle Plating L3 Requires:<10>   Science Facility<0>
+Ship Weapons L1 Require:<10>   Nothing<0>
+Ship Weapons L2 Require:<10>   Science Facility<0>
+Ship Weapons L3 Require:<10>   Science Facility<0>
+Ship Plating L1 Requires:<10>   Nothing<0>
+Ship Plating L2 Requires:<10>   Science Facility<0>
+Ship Plating L3 Requires:<10>   Science Facility<0>
+Melee Attacks L1 Require:<10>   Nothing<0>
+Melee Attacks L2 Require:<10>   Lair<0>
+Melee Attacks L3 Require:<10>   Hive<0>
+Missile Attacks L1 Require:<10>   Nothing<0>
+Missile Attacks L2 Require:<10>   Lair<0>
+Missile Attacks L3 Require:<10>   Hive<0>
+Carapace L1 Requires:<10>   Nothing<0>
+Carapace L2 Requires:<10>   Lair<0>
+Carapace L3 Requires:<10>   Hive<0>
+Flyer Attacks L1 Require:<10>   Nothing<0>
+Flyer Attacks L2 Require:<10>   Lair<0>
+Flyer Attacks L3 Require:<10>   Hive<0>
+Flyer Carapace L1 Requires:<10>   Nothing<0>
+Flyer Carapace L2 Requires:<10>   Lair<0>
+Flyer Carapace L3 Requires:<10>   Hive<0>
+Adrenal Glands Require:<10>   Hive<0>
+Ground Weapons L1 Require:<10>   Nothing<0>
+Ground Weapons L2 Require:<10>   Templar Archives<0>
+Ground Weapons L3 Require:<10>   Templar Archives<0>
+Air Weapons L1 Require:<10>   Nothing<0>
+Air Weapons L2 Require:<10>   Fleet Beacon<0>
+Air Weapons L3 Require:<10>   Fleet Beacon<0>
+Ground Armor L1 Requires:<10>   Nothing<0>
+Ground Armor L2 Requires:<10>   Templar Archives<0>
+Ground Armor L3 Requires:<10>   Templar Archives<0>
+Air Armor L1 Requires:<10>   Nothing<0>
+Air Armor L2 Requires:<10>   Fleet Beacon<0>
+Air Armor L3 Requires:<10>   Fleet Beacon<0>
+Shields L1 Require:<10>   Nothing<0>
+Shields L2 Require:<10>   Cybernetics Core<0>
+Shields L3 Require:<10>   Cybernetics Core<0>
+Recruit<0>
+Private<0>
+Private<0>
+Corporal<0>
+Specialist<0>
+Sergeant<0>
+First Sergeant<0>
+Master Sergeant<0>
+Warrant Officer<0>
+Captain<0>
+Major<0>
+Lt Commander<0>
+First Sergeant<0>
+Sergeant Major<0>
+Colonel<0>
+Commodore<0>
+Marshall<0>
+Lieutenant<0>
+General<0>
+Captain Raynor<0>
+General Duke<0>
+Admiral<0>
+Tassadar<0>
+Interceptors<0>
+ESC<0>
+z<1>Morph to <3>Z<1>erglings<0>
+h<1>Morph to <3>H<1>ydralisk<0>
+u<1>Morph to <3>U<1>ltralisk<0>
+d<1>Morph to <3>D<1>rone<0>
+o<1>Morph to <3>O<1>verlord<0>
+m<1>Morph to <3>M<1>utalisk<0>
+g<5><3>G<1>uardian Aspect<0>
+q<1>Morph to <3>Q<1>ueen<0>
+f<1>Morph to De<3>f<1>iler<0>
+s<1>Morph to <3>S<1>courge<0>
+i<1>Train <3>I<1>nfested Terran<0>
+m<1>Train <3>M<1>arine<0>
+g<1>Train <3>G<1>host<0>
+f<1>Train <3>F<1>irebat<0>
+v<1>Build <3>V<1>ulture<0>
+g<1>Build <3>G<1>oliath<0>
+t<1>Build Siege <3>T<1>ank<0>
+s<1>Build <3>S<1>CV<0>
+w<1>Build <3>W<1>raith<0>
+v<1>Build Science <3>V<1>essel<0>
+d<1>Build <3>D<1>ropship<0>
+b<1>Build <3>B<1>attlecruiser<0>
+n<1>Arm <3>N<1>uclear Silo<0>
+o<1>Build <3>O<1>bserver<0>
+p<1>Build <3>P<1>robe<0>
+z<1>Warp in <3>Z<1>ealot<0>
+d<1>Warp in <3>D<1>ragoon<0>
+t<1>Warp in High <3>T<1>emplar<0>
+s<1>Build <3>S<1>huttle<0>
+s<1>Warp in <3>S<1>cout<0>
+a<1>Warp in <3>A<1>rbiter<0>
+c<1>Warp in <3>C<1>arrier<0>
+i<1>Build <3>I<1>nterceptor<0>
+v<1>Build Rea<3>v<1>er<0>
+r<1>Build Sca<3>r<1>ab<0>
+b<1>Hire Merc <3>B<1>iker<0>
+g<1>Hire Merc <3>G<1>unship<0>
+r<1>Hire <3>R<1>aider<0>
+q<1>Mutate into Hatchery(<3>Q<1>)<0>
+w<1>Mutate into Creep Colony(<3>W<1>)<0>
+e<1>Mutate into Extractor(<3>E<1>)<0>
+s<1>Mutate into <3>S<1>pawning Pool<0>
+v<1>Mutate into E<3>v<1>olution Chamber<0>
+d<1>Mutate into Hydralisk <3>D<1>en<0>
+n<1>Mutate into <3>N<1>ydus Canal<0>
+s<1>Mutate into <3>S<1>pire<0>
+q<1>Mutate into <3>Q<1>ueen's Nest<0>
+u<1>Mutate into <3>U<1>ltralisk Cavern<0>
+d<1>Mutate into <3>D<1>efiler Mound<0>
+l<1>Mutate into <3>L<1>air<0>
+h<1>Mutate into <3>H<1>ive<0>
+g<1>Mutate into <3>G<1>reater Spire<0>
+s<1>Mutate into <3>S<1>pore Colony<0>
+u<1>Mutate into S<3>u<1>nken Colony<0>
+n<0>Place <3>N<1>ydus Canal Exit<0>
+n<1>Warp in <3>N<1>exus<0>
+p<1>Warp in <3>P<1>ylon<0>
+a<1>Warp in <3>A<1>ssimilator<0>
+g<1>Warp in <3>G<1>ateway<0>
+f<1>Warp in <3>F<1>orge<0>
+c<1>Warp in Photon <3>C<1>annon<0>
+y<1>Warp in C<3>y<1>bernetics Core<0>
+b<1>Warp in Shield <3>B<1>attery<0>
+r<1>Warp in <3>R<1>obotics Facility<0>
+o<1>Warp in <3>O<1>bservatory<0>
+c<1>Warp in <3>C<1>itadel of Adun<0>
+t<1>Warp in <3>T<1>emplar Archives<0>
+s<1>Warp in <3>S<1>targate<0>
+f<1>Warp in <3>F<1>leet Beacon<0>
+a<1>Warp in <3>A<1>rbiter Tribunal<0>
+b<1>Warp in Robotics Support <3>B<1>ay<0>
+c<1>Build <3>C<1>ommand Center<0>
+s<1>Build <3>S<1>upply Depot<0>
+r<1>Build <3>R<1>efinery<0>
+b<1>Build <3>B<1>arracks<0>
+e<1>Build <3>E<1>ngineering Bay<0>
+t<1>Build Missile <3>T<1>urret<0>
+a<1>Build <3>A<1>cademy<0>
+u<1>Build B<3>u<1>nker<0>
+f<1>Build <3>F<1>actory<0>
+s<1>Build <3>S<1>tarport<0>
+i<1>Build Sc<3>i<1>ence Facility<0>
+a<1>Build <3>A<1>rmory<0>
+c<1>Build <3>C<1>omsat Station<0>
+n<1>Build <3>N<1>uclear Silo<0>
+c<1>Build <3>C<1>ontrol Tower<0>
+c<1>Build <3>C<1>overt Ops<0>
+p<1>Build <3>P<1>hysics Lab<0>
+c<1>Build Ma<3>c<1>hine Shop<0>
+m<0><3>M<1>ove<0>
+s<0><3>S<1>top<0>
+a<0><3>A<1>ttack<0>
+p<0><3>P<1>atrol<0>
+h<0><3>H<1>old Position<0>
+w<0><3>W<1>ay Points<0>
+l<0><3>L<1>and<0>
+l<0><3>L<1>iftoff<0>
+r<0>Set <3>R<1>ally Point<0>
+r<0><3>R<1>echarge Shields<0>
+s<0><3>S<1>elect Larva<0>
+g<0><3>G<1>ather<0>
+c<0>Return <3>C<1>argo<0>
+r<0><3>R<1>epair<0>
+b<0><3>B<1>uild Structure<0>
+v<0>Build Ad<3>v<1>anced Structure<0>
+b<0><3>B<1>asic Mutation<0>
+v<0>Ad<3>v<1>anced Mutation<0>
+v<0>Ad<3>v<1>anced Morph<0>
+l<0><3>L<1>oad<0>
+u<0><3>U<1>nload All<0>
+n<0><3>N<1>uclear Strike<0>
+p<0><3>P<1>lace COP<0>
+<27><0><3>ESC<1> - Cancel<0>
+<27><0><3>ESC<1> - Cancel<0>
+<27><0><3>ESC<1> - Cancel Construction<0>
+<27><0><3>ESC<1> - Cancel Unit Training<0>
+<27><0><3>ESC<1> - Cancel Upgrade<0>
+<27><0><3>ESC<1> - Cancel Research<0>
+<27><0><3>ESC<1> - Cancel Last<0>
+<27><0><3>ESC<1> - Cancel Addon<0>
+<27><0><3>ESC<1> - Cancel Morph<0>
+<27><0><3>ESC<1> - Cancel Mutation<0>
+<27><0><3>ESC<1> - Cancel Infestation<0>
+<27><0><3>ESC<1> - Cancel Mutation<0>
+<27><0><3>ESC<1> - Cancel Nuclear Strike<0>
+<27><0><3>ESC<1> - Halt Construction<0>
+Ghost Requires:<10>   Academy<10>   Science Facility with<10>   attached Covert Ops<0>
+Firebat Requires:<10>   Academy<0>
+Goliath Requires:<10>   Armory<0>
+Siege Tank Requires:<10>   Attached Machine Shop<0>
+Science Vessel Requires:<10>   Attached Control Tower<10>   Science Facility<0>
+Dropship Requires:<10>   Attached Control Tower<0>
+Battlecruiser Requires:<10>   Attached Control Tower<10>   Science Facility with<10>   attached Physics Lab<0>
+Comsat Station Requires:<10>   Academy<0>
+Nuclear Silo Requires:<10>   Science Facility with<10>   attached Covert Ops<0>
+Barracks Requires:<10>   Command Center<0>
+Academy Requires:<10>   Barracks<0>
+Factory Requires:<10>   Barracks<0>
+Starport Requires:<10>   Factory<0>
+Science Facility Requires:<10>   Starport<0>
+Engineering Bay Requires:<10>   Command Center<0>
+Armory Requires:<10>   Factory<0>
+Missile Turret Requires:<10>   Engineering Bay<0>
+Bunker Requires:<10>   Barracks<0>
+Dragoon Requires:<10>   Cybernetics Core<0>
+Templar Requires:<10>   Templar Archives<0>
+Arbiter Requires:<10>   Arbiter Tribunal<0>
+Carrier Requires:<10>   Fleet Beacon<0>
+Reaver Requires:<10>   Robotics Support Bay<0>
+Observer Requires:<10>   Observatory<0>
+Gateway Requires:<10>   Nexus<0>
+Forge Requires:<10>   Nexus<0>
+Photon Cannon Requires:<10>   Forge<0>
+Shield Battery Requires:<10>   Gateway<0>
+Cybernetics Core Requires:<10>   Gateway<0>
+Robotics Facility Requires:<10>   Cybernetics Core<0>
+Stargate Requires:<10>   Cybernetics Core<0>
+Citadel of Adun Requires:<10>   Cybernetics Core<0>
+Observatory Requires:<10>   Robotics Facility<0>
+Robotics Support Bay Requires:<10>   Robotics Facility<0>
+Fleet Beacon Requires:<10>   Stargate<0>
+Templar Archives Require:<10>   Citadel of Adun<0>
+Arbiter Tribunal Requires:<10>   Stargate<10>   Templar Archives<0>
+Zerglings Require:<10>   Spawning Pool<0>
+Hydralisk Requires:<10>   Hydralisk Den<0>
+Ultralisk Requires:<10>   Ultralisk Cavern<0>
+Mutalisk Requires:<10>   Spire<0>
+Guardian Aspect Requires:<10>   Greater Spire<0>
+Queen Requires:<10>   Queen's Nest<0>
+Defiler Requires:<10>   Defiler Mound<0>
+Scourge Require:<10>   Spire<0>
+Lair Requires:<10>   Spawning Pool<0>
+Hive Requires:<10>   Queen's Nest<0>
+Nydus Canal Requires:<10>   Hive<0>
+Hydralisk Den Requires:<10>   Spawning Pool<0>
+Spire Requires:<10>   Lair<0>
+Greater Spire Requires:<10>   Hive<0>
+Queen's Nest Requires:<10>   Lair<0>
+Evolution Chamber Requires:<10>   Hatchery<0>
+Ultralisk Cavern Requires:<10>   Hive<0>
+Defiler Mound Requires:<10>   Hive<0>
+Spawning Pool Requires:<10>   Hatchery<0>
+Spore Colony Requires:<10>   Evolution Chamber<0>
+Sunken Colony Requires:<10>   Spawning Pool<0>
+Carrier Attack:<10>   Build Interceptors<0>
+Reaver Attack:<10>   Build Scarabs<0>
+Nuclear Strike Requires:<10>   Armed Nuclear Silo<0>
+Not Implemented<0>
+mk<0>
+Kills:<0>
+Evolving<0>
+Upgrading<0>
+Upgrading<0>
+Evolving<0>
+Researching<0>
+Developing<0>
+Morphing<0>
+Building<0>
+Opening Warp Gate<0>
+Morphing<0>
+Building<0>
+Building<0>
+Damage:<0>
+Armor:<0>
+Shields:<0>
+Mining Delay:<0>
+Production <0>
+Unit Ptr:<0>
+Current Order:<0>
+Next Order:<0>
+% Complete<0>
+Order:<0>
+Mutating<0>
+Adding On<0>
+Opening Warp Rift<0>
+Summoning<0>
+Interceptors<0>
+Scarabs<0>
+Nukes<0>
+Spider Mines<0>
+Next Level:<0>
+Minerals:<0>
+Vespene Gas:<0>
+Depleted<0>
+Mutating<0>
+Under Construction<0>
+Opening Warp Rift<0>
+Cancel Morph (%s)<0>
+Cancel Construction (%s)<0>
+Cancel Warp (%s)<0>
+Cancel Upgrade<0>
+Cancel Research<0>
+Cancel Morph<0>
+Unload Unit (%s)<0>
+Click: Select Unit<10>Shift+Click: Deselect Unit<10>Ctrl+Click: Select Unit Type<0>
+Show Terrain in Minimap (<3>Tab<1>)<0>
+Hide Terrain in Minimap (<3>Tab<1>)<0>
+Diplomacy<0>
+Messaging<0>
+Game Menu (<3>F10<1>)<0>
+Control Provided:<0>
+Supplies Provided:<0>
+Psi Provided:<0>
+Total Control:<0>
+Total Supplies:<0>
+Total Psi:<0>
+Control Used:<0>
+Supplies Used:<0>
+Psi Used:<0>
+Control Max:<0>
+Supplies Max:<0>
+Psi Max:<0>
+<7>Parasite Detected<0>
+<6>Disabled<0>
+<6>Disabled<0>
+<6>Unpowered<0>
+<3>Detector<0>
+<4>Hallucination<0>
+Units<0>
+Units<0>
+Resources<0>
+Kills<0>
+Score<0>
+Units to go<0>
+Units to go<0>
+Resources to go<0>
+Kills to go<0>
+Score to go<0>
+Nowhere to return to...can't return.<0>
+Too many underlings...create more Overlords.<0>
+Not enough supplies...build more Supply Depots.<0>
+Not enough psi...build more Pylons.<0>
+Underling limit exceeded.<0>
+Supply limit exceeded.<0>
+Psi limit exceeded.<0>
+Not enough minerals...mine more minerals.<0>
+Not enough Vespene gases....harvest more gas.<0>
+You can't build next to minerals or geysers.<0>
+An undetected unit is in the way.<0>
+You can't build off the map.<0>
+You can't build near the edge of the map.<0>
+You can't build there.<0>
+You must explore there first.<0>
+You must currently be able to see the location.<0>
+Could not build there, find a Vespene Geyser to build on.<0>
+You must build on the Creep.<0>
+You must build near a Pylon.<0>
+Couldn't reach the building site.<0>
+You can't land there.<0>
+Not enough energy.<0>
+Not enough energy.<0>
+Not enough energy.<0>
+Nothing to harvest. Find a Mine or a Vespene Geyser.<0>
+Nothing to harvest. Find a Mine, or build a Refinery at a Vespene Geyser.<0>
+Nothing to harvest. Find a Mine, or build an Assimilator at a Vespene Geyser.<0>
+Must target severely damaged Terran Command Center.<0>
+Unit's waypoint list is full.<0>
+Unable to add order.<0>
+Running low on orders, your last order was not processed.<0>
+Not enough life remaining.<0>
+Vespene Geyser depleted.<0>
+Invalid target.<0>
+Unable to target structure.<0>
+Must target units.<0>
+Unable to attack target.<0>
+Invalid target.<0>
+Must target mechanical units.<0>
+Invalid target.<0>
+Must target damaged mechanical units or damaged complete buildings.<0>
+Must target Terran units.<0>
+Invalid target.<0>
+Must target non-robotic ground units.<0>
+Must target ground.<0>
+Target out of range.<0>
+Target is too close.<0>
+Can only pick up your own transportable units.<0>
+Not enough room for unit.<0>
+Must gather from a Mineral Field or Vespene Geyser.<0>
+Morph an Extractor there first.<0>
+Build a Refinery there first.<0>
+Build an Assimilator there first.<0>
+Must gather gases from your own geyser.<0>
+Invalid target.<0>
+Invalid target.<0>
+Invalid target.<0>
+Units in stasis can't be targeted.<0>
+Must target non-hovering ground units.<0>
+Must target passable terrain.<0>
+Die<0>
+Fizzle<0>
+Stop<0>
+Guard<0>
+Player Guard<0>
+Turret Guard<0>
+Bunker Guard<0>
+Ignore<0>
+Carrier Ignore<0>
+Carrier Stop<0>
+Reaver Stop<0>
+Attack<0>
+Attack Unit<0>
+Attack Fixed Range<0>
+Move Attack Unit<0>
+Attack Tile<0>
+Hover<0>
+Attack Move<0>
+Atk Move EP<0>
+Harass Move<0>
+AI Patrol<0>
+Tower<0>
+Vulture Mine<0>
+Carrier Attack<0>
+Carrier Attack Move<0>
+Stay In Range<0>
+Turret Attack<0>
+Nothing<0>
+Drone Start Build<0>
+Drone Build<0>
+Drone Attack Unit<0>
+Infest Mine<0>
+Build<0>
+Build Protoss<0>
+Pylon Build<0>
+Construct Building<0>
+Repair<0>
+Place Add-On<0>
+Build Add-On<0>
+Train<0>
+Zerg Birth<0>
+Morph<0>
+Zerg Building Morph<0>
+Build Self<0>
+Zerg Build Self<0>
+Enter Nydus Canal<0>
+Protoss Build Self<0>
+Follow<0>
+Carrier<0>
+Carrier Fight<0>
+Reaver<0>
+Reaver Attack<0>
+Reaver Fight<0>
+Reaver Hold<0>
+Train Fighter<0>
+Strafe Unit<0>
+Scarab<0>
+Return<0>
+Drone Land<0>
+Building Land<0>
+Building Lift Off<0>
+Drone Lift Off<0>
+Lift Off<0>
+Reasearch Tech<0>
+Upgrade<0>
+Larva<0>
+Spawning Larva<0>
+Harvest<0>
+Harvest Gas<0>
+Return Gas<0>
+Harvest Minerals<0>
+Return Minerals<0>
+Enter Transport<0>
+Pick Up<0>
+Powerup<0>
+Siege Mode<0>
+Tank Mode<0>
+Watch Target<0>
+Initing Creep Growth<0>
+Stopping Creep Growth<0>
+Spread Creep<0>
+Guardian Aspect<0>
+Warping Archon<0>
+Completing Archon Summon<0>
+Hold Position<0>
+Cloak<0>
+Decloak<0>
+Unload<0>
+Move Unload<0>
+Fire Yamato Gun<0>
+Magna Pulse<0>
+Burrow<0>
+Burrowed<0>
+Unburrow<0>
+Cast Parasite<0>
+Summon Broodlings<0>
+EMP Shockwave<0>
+Lockdown<0>
+Nuke Wait<0>
+Nuke Train<0>
+Nuke Launch<0>
+Nuke Paint<0>
+Nuke Unit<0>
+Nuke Ground<0>
+Nuke Track<0>
+Initializing Arbiter<0>
+Cloaking nearby units<0>
+Place Mine<0>
+Right Click Action<0>
+Left Click Action<0>
+Sap Unit<0>
+Sap Location<0>
+Teleport<0>
+Teleport to Location<0>
+Place Scanner<0>
+Scanner<0>
+Defensive Matrix<0>
+Reset Collision<0>
+Reset Collision<0>
+Patrol<0>
+Computer AI<0>
+Guard Post<0>
+Rescue Passive<0>
+Neutral<0>
+Computer Return<0>
+Initing Psi Provider<0>
+Self Destructing<0>
+Decaying creep<0>
+Recharge Shields<0>
+Shield Battery<0>
+Rally Point<0>
+CTF COP Init<0>
+CTF COP<0>
+Critter<0>
+Hidden Gun<0>
+Open Door<0>
+Close Door<0>
+Hide Trap<0>
+Reveal Trap<0>
+Enable Doodad<0>
+Disable Doodad<0>
+Warp In<0>
+Hide and Suicide<0>
+Fatal<0>
+Nuclear launch detected.<0>
+Terran Custom Level<0>
+Terran Campaign Easy<0>
+Terran Campaign Medium<0>
+Terran Campaign Difficult<0>
+Terran Campaign Area Town<0>
+Terran 3 - Zerg Town<0>
+Terran 5 - Terran Main Town<0>
+Terran 5 - Terran Harvest Town<0>
+Terran 6 - Air Attack Zerg<0>
+Terran 6 - Ground Attack Zerg<0>
+Terran 6 - Zerg Support Town<0>
+Terran 7 - Bottom Zerg Town<0>
+Terran 7 - Right Zerg Town<0>
+Terran 7 - Middle Zerg Town<0>
+Terran 8 - Confederate Town<0>
+Terran 9 - Light Attack<0>
+Terran 9 - Heavy Attack<0>
+Terran 10 - Confederate Towns<0>
+Terran 11 - Zerg Town<0>
+Terran 11 - Lower Protoss Town<0>
+Terran 11 - Upper Protoss Town<0>
+Terran 12 - Nuke Town<0>
+Terran 12 - Phoenix Town<0>
+Terran 12 - Tank Town<0>
+Protoss Custom Level<0>
+Protoss Campaign Easy<0>
+Protoss Campaign Medium<0>
+Protoss Campaign Difficult<0>
+Protoss Campaign Area Town<0>
+Protoss 1 - Zerg Town<0>
+Protoss 2 - Zerg Town<0>
+Protoss 3 - Unused<0>
+Protoss 3 - Air Zerg Town<0>
+Protoss 3 - Ground Zerg Town<0>
+Protoss 4 - Zerg Town<0>
+Protoss 4 - Zerg Town (unused?)<0>
+Protoss 5 - Zerg Town Island<0>
+Protoss 5 - Zerg Town Base<0>
+Protoss 6 - incomplete<0>
+Protoss 7 - Left Protoss Town<0>
+Protoss 7 - Right Protoss Town<0>
+Protoss 7 - Shrine Protoss<0>
+Protoss 8 - Left Protoss Town<0>
+Protoss 8 - Right Protoss Town<0>
+Protoss 8 - Protoss Defenders<0>
+Protoss 9 - Ground Zerg<0>
+Protoss 9 - Air Zerg<0>
+Protoss 9 - Spell Zerg<0>
+Protoss 10 - Mini-Towns<0>
+Protoss 10 - Mini-Town Master<0>
+Protoss 10 - Overmind Defenders<0>
+Zerg Custom Level<0>
+Zerg Campaign Easy<0>
+Zerg Campaign Medium<0>
+Zerg Campaign Difficult<0>
+Zerg Campaign Area Town<0>
+Zerg 1 - Terran Town<0>
+Zerg 2 - Protoss Town<0>
+Zerg 3 - Terran Town<0>
+Zerg 4 - Right Terran Town<0>
+Zerg 4 - Lower Terran Town<0>
+Zerg 5 - incomplete<0>
+Zerg 6 - Protoss Town<0>
+Zerg 7 - Ground Town<0>
+Zerg 7 - Air Town<0>
+Zerg 7 - Support Town<0>
+Zerg 8 - Scout Town<0>
+Zerg 8 - Templar Town<0>
+Zerg 9 - Teal Protoss<0>
+Zerg 9 - Left Yellow Protoss<0>
+Zerg 9 - Right Yellow Protoss<0>
+Zerg 9 - Left Orange Protoss<0>
+Zerg 9 - Right Orange Protoss<0>
+Zerg 10 - Left Teal (Attack)<0>
+Zerg 10 - Right Teal (Support)<0>
+Zerg 10 - Left Yellow (Support)<0>
+Zerg 10 - Right Yellow (Attack)<0>
+Zerg 10 - Red Protoss<0>
+Set a Default Staging Area<0>
+Send All Units on Strategic Suicide Missions<0>
+Send All Units on Random Suicide Missions<0>
+Set Player to Enemy<0>
+Set Player to Ally<0>
+Move Dark Templars to Region<0>
+Switch Computer Player to Rescue Passive<0>
+Enter Closest Bunker<0>
+Value This Area Higher<0>
+Clear Previous Combat Data<0>
+Debug Script 1 (general)<0>
+Debug Script 2 (general)<0>
+Debug Script 3 (general)<0>
+Debug Script 4 (general)<0>
+Debug Script 5 (general)<0>
+Debug Script 1 (location)<0>
+Debug Script 2 (location)<0>
+Debug Script 3 (location)<0>
+Debug Script 4 (location)<0>
+Debug Script 5 (location)<0>
+Structure<0>
+Structure Wall<0>
+Cliff<0>
+High Dirt<0>
+Grass<0>
+High Grass<0>
+Dirt<0>
+Rocky Ground<0>
+Asphalt<0>
+Water<0>
+Coastal Cliff<0>
+Jungle<0>
+High Jungle<0>
+Ruins<0>
+High Ruins<0>
+Temple Wall<0>
+High Temple Wall<0>
+Dark Platform<0>
+High Plating<0>
+Plating<0>
+Platform<0>
+Platform Wall<0>
+Low Platform<0>
+Low Platform Wall<0>
+Rusty Pit Wall<0>
+Rusty Pit<0>
+Solar Array<0>
+Dirt<0>
+High Dirt<0>
+Shale<0>
+Cliff<0>
+Floor<0>
+Wall<0>
+Substructure<0>
+Substructure Wall<0>
+Plating<0>
+Bridges<0>
+Bridges<0>
+Elevated Catwalk Ramps<0>
+Bridges<0>
+Tar<0>
+Tar Cliff<0>
+Dirt<0>
+Dried Mud<0>
+Sand Dunes<0>
+Rocky Ground<0>
+Crags<0>
+Sandy Sunken Pit<0>
+Compound<0>
+High Dirt<0>
+High Sand Dunes<0>
+High Crags<0>
+High Sandy Sunken Pit<0>
+High Compound<0>
+Water<0>
+Snow<0>
+Moguls<0>
+Dirt<0>
+Rocky Snow<0>
+Grass<0>
+Ice<0>
+Outpost<0>
+High Snow<0>
+High Dirt<0>
+High Grass<0>
+High Ice<0>
+High Outpost<0>
+Water<0>
+Dirt<0>
+Mud<0>
+Crushed Rock<0>
+Crevices<0>
+Flagstones<0>
+Sunken Ground<0>
+Basilica<0>
+High Dirt<0>
+High Crushed Rock<0>
+High Flagstones<0>
+High Sunken Ground<0>
+High Basilica<0>
+Terran Campaign Insane<0>
+Protoss Campaign Insane<0>
+Zerg Campaign Insane<0>
+Terran 1 - Electronic Distribution<0>
+Terran 2 - Electronic Distribution<0>
+Terran 3 - Electronic Distribution<0>
+Terran 1 - Shareware<0>
+Terran 2 - Shareware<0>
+Terran 3 - Shareware<0>
+Terran 4 - Shareware<0>
+Terran 5 - Shareware<0>
+Halo Rockets<0>
+Corrosive Acid<0>
+Subterranean Spines<0>
+Neutron Flare<0>
+Mind Control<0>
+Healing<0>
+Restoration<0>
+Optical Flare<0>
+r<4>Research <3>R<1>estoration<10>(Medic ability)<0>
+f<4>Research Optical <3>F<1>lare<10>(Medic ability)<0>
+a<3>He<3>a<1>l<0>
+r<3><3>R<1>estoration<0>
+f<3>Optical <3>F<1>lare<0>
+Restoration:<10>   Research at Academy<0>
+Optical Flare:<10>   Research at Academy<0>
+Lurker Aspect<0>
+l<4>Evolve <3>L<1>urker Aspect<10>(Hydralisk ability)<0>
+Lurker Aspect:<10>   Requires Lair<0>
+Disruption Web<0>
+Mind Control<0>
+Dark Archon Meld<0>
+Feedback<0>
+Maelstrom <0>
+d<4>Develop <3>D<1>isruption Web<10>(Corsair ability)<0>
+m<4>Develop <3>M<1>ind Control<10>(Dark Archon ability)<0>
+f<4>Develop <3>F<1>eedback<10>(Dark Archon ability)<0>
+e<4>Develop Ma<3>e<1>lstrom<10>(Dark Archon ability)<0>
+r<1>Da<3>r<1>k Archon Meld<0>
+d<3><3>D<1>isruption Web<0>
+c<3>Mind <3>C<1>ontrol<0>
+f<3><3>F<1>eedback<0>
+e<3>Ma<3>e<1>lstrom<0>
+Disruption Web:<10>   Develop at Fleet Beacon<0>
+Mind Control:<10>   Research at Templar Archives<0>
+Dark Archon Meld:<10>   Research at Templar Archives<0>
+Dark Archon Warp:<10>   Select 2 or more Dark Templars<0>
+Feedback:<10>   No requirement<0>
+Maelstrom:<10>   Develop at Templar Archives<0>
+Caduceus Reactor<0>
+Charon Booster<0>
+Anabolic Synthesis<0>
+Chitinous Plating<0>
+Argus Jewel<0>
+Argus Talisman<0>
+d<2>Research Ca<3>d<1>uceus Reactor<10>(+50 Medic energy)<0>
+c<2>Research <3>C<1>haron Boosters<10>(Increased Goliath Missile Range)<0>
+a<2>Evolve <3>A<1>nabolic Synthesis<10>(Faster Ultralisk Movement)<0>
+c<2>Evolve <3>C<1>hitinous Plating<10>(Improved Ultralisk Armor)<0>
+j<2>Develop Argus <3>J<1>ewel<10>(+50 Corsair energy)<0>
+t<2>Develop Argus <3>T<1>alisman<10>(+50 Dark Archon energy)<0>
+Research Charon Booster:<10>   Requires Armory<0>
+d<5><3>D<1>evourer Aspect<0>
+l<1>Morph to <3>L<1>urker<0>
+c<1>Train Medi<3>c<1><0>
+y<1>Build Valk<3>y<1>rie<0>
+o<1>Warp in C<3>o<1>rsair<0>
+k<1>Warp in Dar<3>k<1> Templar<0>
+Medic Requires:<10>   Academy<0>
+Valkyrie Requires:<10>   Attached Control Tower<10>   Armory<0>
+Dark Templar Requires:<10>   Templar Archives<0>
+Devourer Aspect Requires:<10>   Greater Spire<0>
+Lurker Aspect:<10>   Evolve at Hydralisk Den<0>
+<7>Blind<0>
+<7>Acid Spores<0>
+per rocket<0>
+Recruit<0>
+Private<0>
+Private<0>
+1st Lieutenant<0>
+Corporal<0>
+Specialist<0>
+Sergeant<0>
+First Sergeant<0>
+Master Sergeant<0>
+Warrant Officer<0>
+Captain<0>
+Major<0>
+First Sergeant<0>
+Sergeant Major<0>
+Colonel<0>
+Commodore<0>
+Lt Commander<0>
+Marshall<0>
+Lieutenant<0>
+General<0>
+Captain Raynor<0>
+General Duke<0>
+Admiral<0>
+Must target injured non-mechanical ground units<0>
+Invalid target.<0>
+Must target enemy units<0>
+Must target non-mechanical units.<0>
+Unable to target structure.<0>
+Must target units with energy.<0>
+Medic<0>
+Medic Heal<0>
+Restoration<0>
+Cast Disruption Web<0>
+Cast Mind Control<0>
+Warping Dark Archon<0>
+Cast Feedback<0>
+Cast Optical Flare<0>
+Cast Shockwave<0>
+Heal Move<0>
+Medic Hold Position<0>
+Junk Yard Dog<0>
+Terran Expansion Custom Level<0>
+Protoss Expansion Custom Level<0>
+Zerg Expansion Custom Level<0>
+Brood Wars Protoss 1 - Town A<0>
+Brood Wars Protoss 1 - Town B<0>
+Brood Wars Protoss 1 - Town C<0>
+Brood Wars Protoss 1 - Town D<0>
+Brood Wars Protoss 1 - Town E<0>
+Brood Wars Protoss 1 - Town F<0>
+Brood Wars Protoss 2 - Town A<0>
+Brood Wars Protoss 2 - Town B<0>
+Brood Wars Protoss 2 - Town C<0>
+Brood Wars Protoss 2 - Town D<0>
+Brood Wars Protoss 2 - Town E<0>
+Brood Wars Protoss 2 - Town F<0>
+Brood Wars Protoss 3 - Town A<0>
+Brood Wars Protoss 3 - Town B<0>
+Brood Wars Protoss 3 - Town C<0>
+Brood Wars Protoss 3 - Town D<0>
+Brood Wars Protoss 3 - Town E<0>
+Brood Wars Protoss 3 - Town F<0>
+Brood Wars Protoss 4 - Town A<0>
+Brood Wars Protoss 4 - Town B<0>
+Brood Wars Protoss 4 - Town C<0>
+Brood Wars Protoss 4 - Town D<0>
+Brood Wars Protoss 4 - Town E<0>
+Brood Wars Protoss 4 - Town F<0>
+Brood Wars Protoss 5 - Town A<0>
+Brood Wars Protoss 5 - Town B<0>
+Brood Wars Protoss 5 - Town C<0>
+Brood Wars Protoss 5 - Town D<0>
+Brood Wars Protoss 5 - Town E<0>
+Brood Wars Protoss 5 - Town F<0>
+Brood Wars Protoss 6 - Town A<0>
+Brood Wars Protoss 6 - Town B<0>
+Brood Wars Protoss 6 - Town C<0>
+Brood Wars Protoss 6 - Town D<0>
+Brood Wars Protoss 6 - Town E<0>
+Brood Wars Protoss 6 - Town F<0>
+Brood Wars Protoss 7 - Town A<0>
+Brood Wars Protoss 7 - Town B<0>
+Brood Wars Protoss 7 - Town C<0>
+Brood Wars Protoss 7 - Town D<0>
+Brood Wars Protoss 7 - Town E<0>
+Brood Wars Protoss 7 - Town F<0>
+Brood Wars Protoss 8 - Town A<0>
+Brood Wars Protoss 8 - Town B<0>
+Brood Wars Protoss 8 - Town C<0>
+Brood Wars Protoss 8 - Town D<0>
+Brood Wars Protoss 8 - Town E<0>
+Brood Wars Protoss 8 - Town F<0>
+Brood Wars Terran 1 - Town A<0>
+Brood Wars Terran 1 - Town B<0>
+Brood Wars Terran 1 - Town C<0>
+Brood Wars Terran 1 - Town D<0>
+Brood Wars Terran 1 - Town E<0>
+Brood Wars Terran 1 - Town F<0>
+Brood Wars Terran 2 - Town A<0>
+Brood Wars Terran 2 - Town B<0>
+Brood Wars Terran 2 - Town C<0>
+Brood Wars Terran 2 - Town D<0>
+Brood Wars Terran 2 - Town E<0>
+Brood Wars Terran 2 - Town F<0>
+Brood Wars Terran 3 - Town A<0>
+Brood Wars Terran 3 - Town B<0>
+Brood Wars Terran 3 - Town C<0>
+Brood Wars Terran 3 - Town D<0>
+Brood Wars Terran 3 - Town E<0>
+Brood Wars Terran 3 - Town F<0>
+Brood Wars Terran 4 - Town A<0>
+Brood Wars Terran 4 - Town B<0>
+Brood Wars Terran 4 - Town C<0>
+Brood Wars Terran 4 - Town D<0>
+Brood Wars Terran 4 - Town E<0>
+Brood Wars Terran 4 - Town F<0>
+Brood Wars Terran 5 - Town A<0>
+Brood Wars Terran 5 - Town B<0>
+Brood Wars Terran 5 - Town C<0>
+Brood Wars Terran 5 - Town D<0>
+Brood Wars Terran 5 - Town E<0>
+Brood Wars Terran 5 - Town F<0>
+Brood Wars Terran 6 - Town A<0>
+Brood Wars Terran 6 - Town B<0>
+Brood Wars Terran 6 - Town C<0>
+Brood Wars Terran 6 - Town D<0>
+Brood Wars Terran 6 - Town E<0>
+Brood Wars Terran 6 - Town F<0>
+Brood Wars Terran 7 - Town A<0>
+Brood Wars Terran 7 - Town B<0>
+Brood Wars Terran 7 - Town C<0>
+Brood Wars Terran 7 - Town D<0>
+Brood Wars Terran 7 - Town E<0>
+Brood Wars Terran 7 - Town F<0>
+Brood Wars Terran 8 - Town A<0>
+Brood Wars Terran 8 - Town B<0>
+Brood Wars Terran 8 - Town C<0>
+Brood Wars Terran 8 - Town D<0>
+Brood Wars Terran 8 - Town E<0>
+Brood Wars Terran 8 - Town F<0>
+Brood Wars Zerg 1 - Town A<0>
+Brood Wars Zerg 1 - Town B<0>
+Brood Wars Zerg 1 - Town C<0>
+Brood Wars Zerg 1 - Town D<0>
+Brood Wars Zerg 1 - Town E<0>
+Brood Wars Zerg 1 - Town F<0>
+Brood Wars Zerg 2 - Town A<0>
+Brood Wars Zerg 2 - Town B<0>
+Brood Wars Zerg 2 - Town C<0>
+Brood Wars Zerg 2 - Town D<0>
+Brood Wars Zerg 2 - Town E<0>
+Brood Wars Zerg 2 - Town F<0>
+Brood Wars Zerg 3 - Town A<0>
+Brood Wars Zerg 3 - Town B<0>
+Brood Wars Zerg 3 - Town C<0>
+Brood Wars Zerg 3 - Town D<0>
+Brood Wars Zerg 3 - Town E<0>
+Brood Wars Zerg 3 - Town F<0>
+Brood Wars Zerg 4 - Town A<0>
+Brood Wars Zerg 4 - Town B<0>
+Brood Wars Zerg 4 - Town C<0>
+Brood Wars Zerg 4 - Town D<0>
+Brood Wars Zerg 4 - Town E<0>
+Brood Wars Zerg 4 - Town F<0>
+Brood Wars Zerg 5 - Town A<0>
+Brood Wars Zerg 5 - Town B<0>
+Brood Wars Zerg 5 - Town C<0>
+Brood Wars Zerg 5 - Town D<0>
+Brood Wars Zerg 5 - Town E<0>
+Brood Wars Zerg 5 - Town F<0>
+Brood Wars Zerg 6 - Town A<0>
+Brood Wars Zerg 6 - Town B<0>
+Brood Wars Zerg 6 - Town C<0>
+Brood Wars Zerg 6 - Town D<0>
+Brood Wars Zerg 6 - Town E<0>
+Brood Wars Zerg 6 - Town F<0>
+Brood Wars Zerg 7 - Town A<0>
+Brood Wars Zerg 7 - Town B<0>
+Brood Wars Zerg 7 - Town C<0>
+Brood Wars Zerg 7 - Town D<0>
+Brood Wars Zerg 7 - Town E<0>
+Brood Wars Zerg 7 - Town F<0>
+Brood Wars Zerg 8 - Town A<0>
+Brood Wars Zerg 8 - Town B<0>
+Brood Wars Zerg 8 - Town C<0>
+Brood Wars Zerg 8 - Town D<0>
+Brood Wars Zerg 8 - Town E<0>
+Brood Wars Zerg 8 - Town F<0>
+Brood Wars Zerg 9 - Town A<0>
+Brood Wars Zerg 9 - Town B<0>
+Brood Wars Zerg 9 - Town C<0>
+Brood Wars Zerg 9 - Town D<0>
+Brood Wars Zerg 9 - Town E<0>
+Brood Wars Zerg 9 - Town F<0>
+Brood Wars Zerg 10 - Town A<0>
+Brood Wars Zerg 10 - Town B<0>
+Brood Wars Zerg 10 - Town C<0>
+Brood Wars Zerg 10 - Town D<0>
+Brood Wars Zerg 10 - Town E<0>
+Brood Wars Zerg 10 - Town F<0>
+Expansion Zerg Campaign Easy<0>
+Expansion Zerg Campaign Medium<0>
+Expansion Zerg Campaign Difficult<0>
+Expansion Zerg Campaign Area Town<0>
+Expansion Protoss Campaign Easy<0>
+Expansion Protoss Campaign Medium<0>
+Expansion Protoss Campaign Difficult<0>
+Expansion Protoss Campaign Area Town<0>
+Expansion Terran Campaign Easy<0>
+Expansion Terran Campaign Medium<0>
+Expansion Terran Campaign Difficult<0>
+Expansion Terran Campaign Area Town<0>
+Expansion Terran Campaign Insane<0>
+Expansion Protoss Campaign Insane<0>
+Expansion Zerg Campaign Insane<0>
+Set Generic Command Target<0>
+Make These Units Patrol<0>
+Enter Transport<0>
+Exit Transport<0>
+Turn ON Shared Vision for Player 1<0>
+Turn ON Shared Vision for Player 2<0>
+Turn ON Shared Vision for Player 3<0>
+Turn ON Shared Vision for Player 4<0>
+Turn ON Shared Vision for Player 5<0>
+Turn ON Shared Vision for Player 6<0>
+Turn ON Shared Vision for Player 7<0>
+Turn ON Shared Vision for Player 8<0>
+Turn OFF Shared Vision for Player 1<0>
+Turn OFF Shared Vision for Player 2<0>
+Turn OFF Shared Vision for Player 3<0>
+Turn OFF Shared Vision for Player 4<0>
+Turn OFF Shared Vision for Player 5<0>
+Turn OFF Shared Vision for Player 6<0>
+Turn OFF Shared Vision for Player 7<0>
+Turn OFF Shared Vision for Player 8<0>
+AI Nuke Here<0>
+AI Harass Here<0>
+Set Unit Order To: Junk Yard Dog<0>
+View Players<0>
+u<0>Speed <3>U<1>p<0>
+p<0><3>P<1>lay<0>
+p<0><3>P<1>ause<0>
+d<0>Slow <3>D<1>own<0>
+Replay Progress<0>
+Paused<0>
+Unlimited<0>

@@ -1,22 +1,27 @@
 # JSFMPQ
 
-
 Java library to 
- - read and modify StarCraft:Broodwar MPQ's (might work for other Blizzard games but not guaranteed).
- - 
+ - read and modify StarCraft:Broodwar MPQ's (archiving file format used by Blizzard games)
+ - extract files contained in those MPQ's
+ - decompile & compile TBL files (Starcraft text string)
 
 (Uses [SFmpqapi ](https://sfsrealm.hopto.org/dwnload.html#SFmpqapi))
 
 
-This library offers 3 layers of abstraction:
+### MPQ
+This library offers 3 layers of abstraction to manipulate MPQ's:
 
- - `MPQEditor`: highest level, offers easy and simple manipulation of MPQ archives
+ - `MPQEditor`: highest level, offers easy and simple manipulation of MPQ archives (probably )
  - `SFMPQ`: lowest level, pure C-style calls, only use if you know what you are doing
  - `SFMPQWrapper`: middle level, still pretty lowlevel, but has a more intuitive interface for Java programmers
  
+ ### TBL
+  - `TBLTools.decompile` tbl→txt
+  - `TBLTools.compile` txt→tbl
  
- ### Example: custom hotkeys
+ ### Example Usage
 
+Modifying custom hotkeys for StarCraft:Broodwar
  ```Java
 class CustomHotkeys {
     public static void main(String[] args) {
@@ -32,4 +37,11 @@ class CustomHotkeys {
 
     }
 }
+```
+
+
+ 
+ ### Command-Line Usage
+ ```bash
+# TODO
 ```
