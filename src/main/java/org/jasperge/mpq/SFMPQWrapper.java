@@ -99,6 +99,15 @@ public class SFMPQWrapper {
         return ret;
     }
 
+
+    public boolean addFileFromBuffer(Pointer archive, byte[] bytes, int fileSize, String destFileName, int flags) {
+        boolean ret = sfmpq.MpqAddFileFromBuffer(archive, bytes, fileSize, destFileName, flags);
+        if (!ret) {
+            System.err.println("AddFileFromBuffer Error: " + Native.getLastError());
+        }
+        return ret;
+    }
+
     public Pointer openFileEx(Pointer archive, String fileName, int flags) {
         PointerByReference ptr = new PointerByReference();
         if (!sfmpq.SFileOpenFileEx(archive, fileName, flags, ptr)) {

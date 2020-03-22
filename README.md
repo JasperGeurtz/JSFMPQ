@@ -18,12 +18,12 @@ This library offers 3 layers of abstraction to manipulate MPQ's:
 ### TBL
   - `TBLTools.decompile` tbl→txt
   - `TBLTools.compile` txt→tbl
- 
- 
+
 ### Installation
  - Add to your project tools via JitPack: https://jitpack.io/#JasperGeurtz/JSFMPQ
- - Make sure `SFmpq.dll` or `SFmpq64.dll` are on your path/same directory (until I figure out a way to do this more elegantly)
- - Make sure `Listfile.txt` is in the same directory (until I figure out a way to do this more elegantly)
+ - Make sure [SFmpq.dll](https://github.com/JasperGeurtz/JSFMPQ/blob/master/SFmpq.dll) or [SFmpq64.dll](https://github.com/JasperGeurtz/JSFMPQ/blob/master/SFmpq64.dll),
+   depending on the JVM, are on your path/same directory (until I figure out a way to do this more elegantly)
+ - Make sure [Listfile.txt](https://github.com/JasperGeurtz/JSFMPQ/blob/master/Listfile.txt) is in the same directory if you wan't to extract files (until I figure out a way to do this more elegantly)
 
 ### Example Usage
 
@@ -31,23 +31,43 @@ Modifying hotkeys for StarCraft:Broodwar
  ```Java
 class CustomHotkeys {
     public static void main(String[] args) {
-        String patchMPQ = new File("patch_rt.mpq").getAbsolutePath();
+        // Path to mpq file
+        String patchMPQ = new File("patch_rt.mpq").getPath();
+
+        // Open MPQ file
         MPQEditor editor = new MPQEditor(patchMPQ);
 
-        String hotkeysFileName = "rez\\stat_txt.tbl";
-        assert editor.getFiles().stream() //make sure the file is present
-                .anyMatch(n -> n.name.equals(keysFileName));
+        String hotkeysFilename = "rez\\stat_txt.tbl";
+        assert editor.hasFile(hotkeysFilename);
 
+        // Extract hotkey file
+        byte[] keyBytes = editor.extractFileBuffer(hotkeysFilename);
 
-        ByteBuffer keysBuf = editor.extractToBuffer(keysFileName);
+        // change zergling hotkey from `z` to `m`
+        List<String> strings = TBLTools.decompile(keyBytes);
+        int idx = strings.indexOf("z<1>Morph to <3>Z<1>erglings<0>");
+        strings.set(idx, "m<1>Morph to Zerglings<0><3>M<1>");
+        byte[] newKeyBytes = TBLTools.compile(strings);
+        
+        // update the hotkey file
+        assert editor.addFileFromBuffer(newKeyBytes, "rez\\stat_txt.tbl");
 
+        // close the MPOQ file to save
+        assert editor.close();
     }
 }
 ```
 
 
- 
  ### Command-Line Usage
  ```bash
-# TODO
+java -jar JSFMPQ.jar mpq open patch_rt.mpq add stat_txt.tbl "rez\\stat_txt.tbl" close
 ```
+
+### Todo
+ - delete file in MPQ
+ - compress file in MPQ
+ - rename files in MPQ
+ - command line application
+ - support more SC:BW formats? (only on request)
+ 

@@ -29,6 +29,13 @@ public class MPQEditor {
     }
 
     /**
+     * Add file using bytes instead of path.
+     */
+    public boolean addFileFromBuffer(byte[] bytes, String destFileName) {
+        return sfmpq.addFileFromBuffer(archive, bytes, bytes.length, destFileName, MAFA_REPLACE_EXISTING);
+    }
+
+    /**
      * Extract file, if destFileName == null, it will take the name of the sourceFile
      * but with all `/` & `\\` replaced with `_`
      */
@@ -100,4 +107,12 @@ public class MPQEditor {
         return sfmpq.closeUpdatedArchive(archive) == 1;
     }
 
+    public boolean hasFile(String filename) {
+        Pointer ptr = sfmpq.openFileEx(archive, filename, 0);
+        if (ptr != null) {
+            sfmpq.closeFile(ptr);
+            return true;
+        }
+        return false;
+    }
 }
