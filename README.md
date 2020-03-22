@@ -58,12 +58,6 @@ class CustomHotkeys {
 }
 ```
 
-
- ### Command-Line Usage
- ```bash
-java -jar JSFMPQ.jar mpq open patch_rt.mpq add stat_txt.tbl "rez\\stat_txt.tbl" close
-```
-
 ### Todo
  - delete file in MPQ
  - compress file in MPQ
