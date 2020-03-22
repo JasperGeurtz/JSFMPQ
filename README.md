@@ -52,7 +52,7 @@ class CustomHotkeys {
         // update the hotkey file
         assert editor.addFileFromBuffer(newKeyBytes, "rez\\stat_txt.tbl");
 
-        // close the MPOQ file to save
+        // close the MPQ file to save
         assert editor.close();
     }
 }

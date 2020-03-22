@@ -6,7 +6,8 @@
 
     <groupId>org.example</groupId>
     <artifactId>JSFMPQ</artifactId>
-    <version>0.2</version>
+    <version>0.3</version>
+
     <build>
         <plugins>
             <plugin>
@@ -38,7 +39,6 @@
         </plugins>
     </build>
 
-
     <repositories>
         <repository>
             <id>jitpack.io</id>
@@ -51,11 +51,6 @@
             <artifactId>jna</artifactId>
             <version>5.5.0</version>
         </dependency>
-<!--        <dependency>-->
-<!--            <groupId>net.java.dev.jna</groupId>-->
-<!--            <artifactId>jna-platform</artifactId>-->
-<!--            <version>5.5.0</version>-->
-<!--        </dependency>-->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
@@ -63,7 +58,5 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-
-
 
 </project>
