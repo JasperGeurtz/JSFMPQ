@@ -2,16 +2,12 @@ package org.jasperge.mpq;
 
 import com.sun.jna.Pointer;
 import com.sun.jna.ptr.IntByReference;
-import org.jasperge.sfmpq.MPQFILE;
 
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
+import java.io.*;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import static org.jasperge.sfmpq.SFMPQ.MAFA_REPLACE_EXISTING;
-import static org.jasperge.sfmpq.SFMPQ.MOAU_OPEN_EXISTING;
+import static org.jasperge.sfmpq.SFMPQ.*;
 
 public class MPQEditor {
     final SFMPQWrapper sfmpq = new SFMPQWrapper();

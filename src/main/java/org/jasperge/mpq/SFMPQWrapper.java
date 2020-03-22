@@ -14,7 +14,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import static org.jasperge.sfmpq.SFMPQ.SFILE_INFO_HASH_TABLE_SIZE;
+import static org.jasperge.sfmpq.SFMPQ.*;
 
 public class SFMPQWrapper {
     private static SFMPQ sfmpq = SFMPQ.getInstance(); //only 1 instance
