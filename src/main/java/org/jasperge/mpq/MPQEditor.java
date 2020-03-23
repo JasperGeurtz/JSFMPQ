@@ -4,115 +4,106 @@ import com.sun.jna.Pointer;
 import com.sun.jna.ptr.IntByReference;
 
 import java.io.*;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.List;
 import java.util.stream.Collectors;
 
 import static org.jasperge.sfmpq.SFMPQ.*;
 
-public class MPQEditor {
+public class MPQEditor implements AutoCloseable{
     final SFMPQWrapper sfmpq = new SFMPQWrapper();
     private final Pointer archive;
 
     /**
      * fails if doesn't exist
      */
-    public MPQEditor(String filePath) {
+    public MPQEditor(Path filePath) throws MPQException {
         // last param ignored anyway
-        archive = sfmpq.openArchiveForUpdate(filePath, MOAU_OPEN_EXISTING, 262144);
+        archive = sfmpq.openArchiveForUpdate(filePath.toString(), MOAU_OPEN_EXISTING, 262144);
     }
 
     /**
      * Add file to Archive: WILL REPLACE!
      */
-    public boolean addFile(String sourceFileName, String destFileName) {
-        return sfmpq.addFileToArchive(archive, sourceFileName, destFileName, MAFA_REPLACE_EXISTING);
+    public MPQEditor addFile(String sourceFileName, String destFileName) throws MPQException {
+        sfmpq.addFileToArchive(archive, sourceFileName, destFileName, MAFA_REPLACE_EXISTING);
+        return this;
     }
 
     /**
      * Add file using bytes instead of path.
      */
-    public boolean addFileFromBuffer(byte[] bytes, String destFileName) {
-        return sfmpq.addFileFromBuffer(archive, bytes, bytes.length, destFileName, MAFA_REPLACE_EXISTING);
+    public MPQEditor addFileFromBuffer(byte[] bytes, String destFileName) throws MPQException {
+        sfmpq.addFileFromBuffer(archive, bytes, bytes.length, destFileName, MAFA_REPLACE_EXISTING);
+        return this;
     }
 
     /**
      * Extract file, if destFileName == null, it will take the name of the sourceFile
      * but with all `/` & `\\` replaced with `_`
      */
-    public boolean extractFile(String sourceFileName, String destFileName) throws IOException {
+    public MPQEditor extractFile(String sourceFileName, Path destFileName) throws IOException {
         if (destFileName == null) {
-            destFileName = sourceFileName.replace('\\', '_').replace('/','_');
+            destFileName = Paths.get(sourceFileName.replace('\\', '_').replace('/','_'));
         }
         byte[] buffer = extractFileBuffer(sourceFileName);
         if (buffer == null) {
-            return false;
+            throw new MPQException("extractFileBuffer");
         }
-        try (FileOutputStream fos = new FileOutputStream(destFileName)) {
+        try (FileOutputStream fos = new FileOutputStream(destFileName.toString())) {
             fos.write(buffer);
         }
-        return true;
+        return this;
     }
 
-    public boolean extractAll(String outputDir) throws IOException {
+    public MPQEditor extractAll(String outputDir) throws IOException {
         File dir = new File(outputDir);
         if (!dir.exists()) {
             boolean ret = dir.mkdirs();
             if (!ret) {
-                return false;
+                throw new MPQException("extractAll Error: couldn't create directory: " + outputDir);
             }
         }
         else if (!dir.isDirectory()) {
-            return false;
+            throw new MPQException("extractAll Error: " + outputDir + " is not a directory");
         }
-        boolean all = true;
         for (MPQFile file : getFiles()) {
-            boolean ret = extractFile(file.name, outputDir + "\\" + file.name
+            extractFile(file.name, Paths.get(outputDir + "\\" + file.name
                     .replace("\\", "_")
-                    .replace("/", "_"));
-            if (!ret) {
-                System.err.println("failed to extract: " + file.name);
-            }
-            all &= ret;
+                    .replace("/", "_")));
         }
-        return all;
+        return this;
     }
 
-    public byte[] extractFileBuffer(String sourceFileName) {
+    public byte[] extractFileBuffer(String sourceFileName) throws MPQException {
         Pointer filePtr = sfmpq.openFileEx(archive, sourceFileName, 0);
-        if (filePtr == null) {
-            return null;
-        }
         int fileSize = sfmpq.getFileSize(filePtr, null);
-        if (fileSize < 0) {
-            return null;
-        }
         byte[] buffer = new byte[fileSize];
         if (fileSize > 0) {
-            boolean ret = sfmpq.readFile(filePtr, buffer, fileSize, new IntByReference(), 0);
-            if (!ret) {
-                return null;
-            }
+            sfmpq.readFile(filePtr, buffer, fileSize, new IntByReference(), 0);
         }
         sfmpq.closeFile(filePtr);
         return buffer;
     }
 
-    public List<MPQFile> getFiles() {
+    public List<MPQFile> getFiles() throws MPQException {
         return sfmpq.listFiles(archive).stream()
                 .map(MPQFile::new)
                 .collect(Collectors.toList());
     }
 
-    public boolean close() {
-        return sfmpq.closeUpdatedArchive(archive) == 1;
+    public void close() throws MPQException {
+        sfmpq.closeUpdatedArchive(archive);
     }
 
-    public boolean hasFile(String filename) {
-        Pointer ptr = sfmpq.openFileEx(archive, filename, 0);
-        if (ptr != null) {
+    public boolean hasFile(String filename) throws MPQException {
+        try {
+            Pointer ptr = sfmpq.openFileEx(archive, filename, 0);
             sfmpq.closeFile(ptr);
             return true;
+        } catch (MPQException e) {
+            return false;
         }
-        return false;
     }
 }

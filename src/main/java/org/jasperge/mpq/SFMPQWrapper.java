@@ -33,49 +33,46 @@ public class SFMPQWrapper {
         return sfmpq.SFMpqGetVersion();
     }
 
-    public Pointer openArchive(String fileName, int priority, int flags) {
+    public Pointer openArchive(String fileName, int priority, int flags) throws MPQException{
         PointerByReference ptr = new PointerByReference();
 
         if (!sfmpq.SFileOpenArchive(fileName, priority, flags, ptr)) {
-            System.err.println("openArchive Error: " + Native.getLastError());
-            return null;
+            throw new MPQException("openArchive Error: " + Native.getLastError());
         }
         return ptr.getValue();
     }
 
-    public boolean closeArchive(Pointer archive) {
-        return sfmpq.SFileCloseArchive(archive);
+    public void closeArchive(Pointer archive) throws MPQException {
+        if (!sfmpq.SFileCloseArchive(archive)) {
+            throw new MPQException("closeArchive Error: " + Native.getLastError());
+        }
     }
 
-    public Pointer openFile(String fileName) {
+    public Pointer openFile(String fileName) throws MPQException {
         PointerByReference ptr = new PointerByReference();
 
         if (!sfmpq.SFileOpenFile(fileName, ptr)) {
-            System.err.println("openFile Error: " + Native.getLastError());
-            return null;
+            throw new MPQException("openFile Error: " + Native.getLastError());
         }
         return ptr.getValue();
     }
 
-    public Pointer openArchiveForUpdate(String fileName, int flags, int maximumFilesInArchive) {
+    public Pointer openArchiveForUpdate(String fileName, int flags, int maximumFilesInArchive) throws MPQException {
         Pointer ptr = sfmpq.MpqOpenArchiveForUpdate(fileName, flags, maximumFilesInArchive);
 
         if (Pointer.nativeValue(ptr) == 0xffffffff) {
-            System.err.println("openArchiveForUpdate Error: " + Native.getLastError());
-            return null;
+            throw new MPQException("openArchiveForUpdate Error: " + Native.getLastError());
         }
         return ptr;
     }
 
-    public int closeUpdatedArchive(Pointer archive) {
-        int ret = sfmpq.MpqCloseUpdatedArchive(archive, 0);
-        if (ret == 0) {
-            System.err.println("closeUpdatedArchive Error: " + Native.getLastError());
+    public void closeUpdatedArchive(Pointer archive) throws MPQException{
+        if (sfmpq.MpqCloseUpdatedArchive(archive, 0) == 0) {
+            throw new MPQException("closeUpdatedArchive Error: " + Native.getLastError());
         }
-        return ret;
     }
 
-    public List<FILELISTENTRY> listFiles(Pointer archive) {
+    public List<FILELISTENTRY> listFiles(Pointer archive) throws MPQException{
         int n = sfmpq.SFileGetFileInfo(archive, SFILE_INFO_HASH_TABLE_SIZE);
         if (n == 0) {
             return new ArrayList<>();
@@ -83,57 +80,51 @@ public class SFMPQWrapper {
         FILELISTENTRY[] fileListBuffer = new FILELISTENTRY[n];
 
         if (!sfmpq.SFileListFiles(archive, listFile, fileListBuffer, 0)) {
-            System.err.println("listFiles Error: " + Native.getLastError());
-            return null;
+            throw new MPQException("listFiles Error: " + Native.getLastError());
         }
         return Arrays.stream(fileListBuffer)
                 .filter(f -> f.dwFileExists != 0)
                 .collect(Collectors.toList());
     }
 
-    public boolean addFileToArchive(Pointer archive, String sourceFileName, String destFileName, int flags) {
-        boolean ret = sfmpq.MpqAddFileToArchive(archive, sourceFileName, destFileName, flags);
-        if (!ret) {
-            System.err.println("addFileToArchive Error: " + Native.getLastError());
+    public void addFileToArchive(Pointer archive, String sourceFileName, String destFileName, int flags) throws MPQException {
+        if (!sfmpq.MpqAddFileToArchive(archive, sourceFileName, destFileName, flags)) {
+            throw new MPQException("addFileToArchive Error: " + Native.getLastError());
         }
-        return ret;
     }
 
 
-    public boolean addFileFromBuffer(Pointer archive, byte[] bytes, int fileSize, String destFileName, int flags) {
-        boolean ret = sfmpq.MpqAddFileFromBuffer(archive, bytes, fileSize, destFileName, flags);
-        if (!ret) {
-            System.err.println("AddFileFromBuffer Error: " + Native.getLastError());
+    public void addFileFromBuffer(Pointer archive, byte[] bytes, int fileSize, String destFileName, int flags) throws MPQException {
+        if (!sfmpq.MpqAddFileFromBuffer(archive, bytes, fileSize, destFileName, flags)) {
+            throw new MPQException("AddFileFromBuffer Error: " + Native.getLastError());
         }
-        return ret;
     }
 
-    public Pointer openFileEx(Pointer archive, String fileName, int flags) {
+    public Pointer openFileEx(Pointer archive, String fileName, int flags) throws MPQException {
         PointerByReference ptr = new PointerByReference();
-        if (!sfmpq.SFileOpenFileEx(archive, fileName, flags, ptr)) {
-            System.err.println("openFileEx Error: " + Native.getLastError());
-            return null;
+         if (!sfmpq.SFileOpenFileEx(archive, fileName, flags, ptr)) {
+            throw new MPQException("openFileEx Error: " + Native.getLastError());
         }
         return ptr.getValue();
     }
 
-    public boolean closeFile(Pointer file) {
-        boolean ret = sfmpq.SFileCloseFile(file);
-        if (!ret) {
-            System.err.println("closeFile Error: " + Native.getLastError());
+    public void closeFile(Pointer file) throws MPQException {
+        if (!sfmpq.SFileCloseFile(file)) {
+            throw new MPQException("closeFile Error: " + Native.getLastError());
         }
-        return ret;
     }
 
-    public int getFileSize(Pointer file, PointerByReference fileSizeHigh) {
-        return sfmpq.SFileGetFileSize(file, fileSizeHigh);
+    public int getFileSize(Pointer file, PointerByReference fileSizeHigh) throws MPQException{
+        int size = sfmpq.SFileGetFileSize(file, fileSizeHigh);
+        if (size < 0) {
+            throw new MPQException("getFileSize Error: " + Native.getLastError() + " | invalid filesize: " + size);
+        }
+        return size;
     }
 
-    public boolean readFile(Pointer file, byte[] buffer, int fileSize, IntByReference bytesRead, int overlapped) {
-        boolean ret = sfmpq.SFileReadFile(file, buffer, fileSize, bytesRead, overlapped);
-        if (!ret) {
-            System.err.println("readFile Error: " + Native.getLastError());
+    public void readFile(Pointer file, byte[] buffer, int fileSize, IntByReference bytesRead, int overlapped) throws MPQException {
+        if (!sfmpq.SFileReadFile(file, buffer, fileSize, bytesRead, overlapped)) {
+            throw new MPQException("readFile Error: " + Native.getLastError());
         }
-        return ret;
     }
 }

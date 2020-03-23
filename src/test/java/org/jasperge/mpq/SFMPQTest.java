@@ -18,7 +18,7 @@ public class SFMPQTest {
     SFMPQWrapper sfmpq = new SFMPQWrapper();
 
     @Test
-    public void testAppending() {
+    public void testAppending() throws MPQException {
         assertEquals(2.0, sfmpq.getVersionFloat(), 0.0001);
         assertEquals("ShadowFlare MPQ API Library v1.08", sfmpq.getVersionString());
 
@@ -27,14 +27,12 @@ public class SFMPQTest {
 
         Pointer archive = sfmpq.openArchiveForUpdate(archivePath, MOAU_OPEN_EXISTING, 262144);
         System.out.println(archive);
-        boolean ret = sfmpq.addFileToArchive(archive, filePath, "rez\\stat_txt.tbl", MAFA_REPLACE_EXISTING);
-        System.out.println(ret);
-        int closed = sfmpq.closeUpdatedArchive(archive);
-        System.out.println(closed);
+        sfmpq.addFileToArchive(archive, filePath, "rez\\stat_txt.tbl", MAFA_REPLACE_EXISTING);
+        sfmpq.closeUpdatedArchive(archive);
     }
 
     @Test
-    public void testArchive() {
+    public void testArchive() throws MPQException {
         Pointer archivePtr = sfmpq.openArchive(archivePath, 0, SFILE_OPEN_HARD_DISK_FILE);
         MPQARCHIVE archive = new MPQARCHIVE.ByReference(archivePtr);
 
@@ -48,11 +46,11 @@ public class SFMPQTest {
 
         assertEquals(89, files.size());
 
-        assertTrue(sfmpq.closeArchive(archivePtr));
+        sfmpq.closeArchive(archivePtr);
     }
 
     @Test
-    public void testExtract() {
+    public void testExtract() throws MPQException {
         Pointer archivePtr = sfmpq.openArchive(archivePath, 0, SFILE_OPEN_HARD_DISK_FILE);
 
         try {
@@ -65,20 +63,13 @@ public class SFMPQTest {
 
             byte[] buffer = new byte[fileSize];
             if (fileSize > 0) {
-                boolean ret = sfmpq.readFile(filePtr, buffer, fileSize, new IntByReference(), 0);
+                sfmpq.readFile(filePtr, buffer, fileSize, new IntByReference(), 0);
             }
-//            try (FileOutputStream fos = new FileOutputStream(hotkeyFileName.replace("\\", "_"))) {
-//                if (fileSize != 0) {
-//                    fos.write(buffer);
-//                }
-//            }
-            assertTrue(sfmpq.closeFile(filePtr));
+            sfmpq.closeFile(filePtr);
         }
         catch (Exception e) {
             e.printStackTrace();
         }
-        assertTrue(sfmpq.closeArchive(archivePtr));
+        sfmpq.closeArchive(archivePtr);
     }
-
-
 }

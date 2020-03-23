@@ -1,0 +1,894 @@
+</COMMENT credits for Brood War: Starcraft Expansion>
+</FADESPEED 100>
+
+</COMMENT #############################################################>
+</BACKGROUND glue\palmm\backgnd.pcx>
+</FONTCOLOR glue\palmm\tfont.pcx>
+</SCREENCENTER>
+Brood War
+Game Design
+
+Blizzard Entertainment
+</PAGE>
+
+
+</SCREENCENTER>
+Macintosh Version
+
+Future Point
+</PAGE>
+
+
+</SCREENCENTER>
+Executive Producers
+
+Mike Morhaime
+Bill Roper
+</PAGE>
+
+
+</SCREENCENTER>
+Producer
+
+Shane Dabiri
+</PAGE>
+
+
+</SCREENCENTER>
+Macintosh Producer
+
+Chris Millar
+</PAGE>
+
+
+</SCREENCENTER>
+Lead Designer
+
+Rob Pardo
+</PAGE>
+
+
+</SCREENCENTER>
+Senior Designer & Story
+
+Chris Metzen
+</PAGE>
+
+
+</SCREENCENTER>
+Campaign Level Designers
+
+Mike Heiberg
+Rob Pardo
+Dean Shipley
+Peter Underwood
+</PAGE>
+
+
+</SCREENCENTER>
+Multiplayer Level Designers
+
+Eric Dodds
+Dave 'Deltree' Hale
+Scott Mercer
+</PAGE>
+
+</COMMENT #############################################################>
+</BACKGROUND glue\palpd\backgnd.pcx>
+</FONTCOLOR glue\palpd\tfont.pcx>
+</SCREENLEFT>
+Programming
+
+Bob Fitch
+Jeff Strain
+Frank Pearce
+Mike Morhaime
+Mike Heiberg
+Pat Wyatt
+Collin Murray
+</PAGE>
+
+
+</SCREENLEFT>
+Macintosh Programming
+
+Brian Fitzgerald (Future Point)
+David Lawrence (Future Point)
+Tony Tribelli (Future Point)
+</PAGE>
+
+
+</SCREENLEFT>
+Battle.net Programming
+
+Mike O'Brien
+Scott Coleman
+</PAGE>
+
+</SCREENLEFT>
+Custom AI Programming
+
+Bob Fitch
+</PAGE>
+
+
+</SCREENLEFT>
+StarEdit Programming
+
+Jeff Strain
+</PAGE>
+
+
+</SCREENLEFT>
+Macintosh StarEdit Programming
+
+Brian Fitzgerald (Future Point)
+David Lawrence (Future Point)
+</PAGE>
+
+
+</SCREENLEFT>
+Additional Programming
+
+Jay Baxter
+JC Park
+Jeff Mears
+</PAGE>
+
+
+</COMMENT #############################################################>
+</BACKGROUND glue\paltd\backgnd.pcx>
+</FONTCOLOR glue\paltd\tfont.pcx>
+</SCREENRIGHT>
+Art Direction
+
+Samwise Didier
+Duane Stinnett
+</PAGE>
+
+
+</SCREENRIGHT>
+Artists
+
+Nick Carpenter
+Samwise Didier
+Duane Stinnett
+Rob McNaughton
+Dave Berggren
+Bill Petras
+Eric Flannum
+Roman Kenney
+Maxx Marshall
+Dave Pursely
+Justin Thavirat
+</PAGE>
+
+
+</SCREENRIGHT>
+Technical Artist
+
+Peter Underwood
+</PAGE>
+
+
+</COMMENT #############################################################>
+</BACKGROUND glue\palzv\backgnd.pcx>
+</FONTCOLOR glue\palzv\tfont.pcx>
+</SCREENLEFT>
+Director of Blizzard Film
+
+Matt Samia
+</PAGE>
+
+
+</SCREENLEFT>
+Blizzard Cinematic Artists
+
+Scott Abeyta
+John Burnett
+Nick Carpenter
+Harley D. Huggins II
+Trevor Jacobs
+Paul Limon
+</PAGE>
+
+</SCREENLEFT>
+Blizzard Cinematic Artists
+
+Stu Rose
+Matt Samia
+Sharon Shellman
+Mark Skelton
+Brian Sousa
+Patrick Thomas
+</PAGE>
+
+
+</SCREENLEFT>
+Digital Video Editor
+
+Joeyray Hall
+</PAGE>
+
+
+</COMMENT #############################################################>
+</BACKGROUND glue\palrp\backgnd.pcx>
+</FONTCOLOR glue\palrp\tfont.pcx>
+</SCREENRIGHT>
+Audio Producer
+
+Glenn Stafford
+</PAGE>
+
+
+</SCREENRIGHT>
+Music
+
+Glenn Stafford
+Jason Hayes
+Tracy W. Bush
+</PAGE>
+
+
+</SCREENRIGHT>
+Music Vocalist for Cinematics
+
+Patrick Bell
+Heather Greene
+Tiffany Hayes
+Diana Lu
+Glenn Stafford
+Jordan Varela
+Kari Wibben
+</PAGE>
+
+
+</SCREENRIGHT>
+Sound Design & Voice Editing
+
+Glenn Stafford
+Jason Hayes
+Tracy W. Bush
+Tami Donner
+</PAGE>
+
+
+</SCREENRIGHT>
+Voice Casting and Direction
+
+Glenn Stafford
+Jason Hayes
+Chris Metzen
+Tami Donner
+</PAGE>
+
+
+
+</SCREENRIGHT>
+Voices
+
+Glynnis Talken
+Jack Ritschel
+Paul Ainsley
+Castulo Guerra
+Debra De Liso
+Paul Eiding
+Tiffany Hayes
+</PAGE>
+
+
+</SCREENRIGHT>
+Voices
+
+James W. Harper
+Robert Clotworthy
+Jason Hayes
+Chris Metzen
+Bill Roper
+Allen Adham
+</PAGE>
+
+
+</COMMENT #############################################################>
+</BACKGROUND glue\palrz\backgnd.pcx>
+</FONTCOLOR glue\palrz\tfont.pcx>
+</SCREENLEFT>
+Manual Layout & Design
+
+Peter Underwood
+Chris Metzen
+Bill Roper
+</PAGE>
+
+
+</SCREENLEFT>
+Manual Artwork
+
+Samwise Didier
+Ru Weerasuriya
+</PAGE>
+
+
+
+</COMMENT #############################################################>
+</BACKGROUND glue\palrt\backgnd.pcx>
+</FONTCOLOR glue\palrt\tfont.pcx>
+</SCREENRIGHT>
+Quality Assurance Manager
+
+Chris Sigaty
+</PAGE>
+
+
+</SCREENRIGHT>
+Macintosh Quality Assurance Manager
+
+Chris Sigaty
+</PAGE>
+
+
+</SCREENRIGHT>
+Quality Assurance Project Leads
+
+Frank Gilson
+Mike Murphy
+Ian Welke
+</PAGE>
+
+
+</SCREENRIGHT>
+Macintosh Quality Assurance Project Leads
+
+Joe Frayne
+Dave Fried
+</PAGE>
+
+
+</SCREENRIGHT>
+Quality Assurance Team Leads
+
+Christian Arretche
+Tim Campbell
+Roger Eberhart
+John Lagrave
+Brian 'Doc' Love
+Derek Simmons
+</PAGE>
+
+
+</SCREENRIGHT>
+Additional Testing
+
+Joseph Frayne
+David Fried
+Carlos Guerrero
+Mike Hale
+Jason Hutchins
+Ray Laubach
+</PAGE>
+
+
+</SCREENRIGHT>
+Additional Testing
+
+Robert Martinsen
+Judah Mehler
+Mark Moser
+Justin Parker
+Aaron Sakamoto
+Toshiaki Yamazaki
+</PAGE>
+
+
+</SCREENRIGHT>
+Macintosh Quality Assurance Team Leads
+
+John Lagrave
+Brian 'Doc' Love
+</PAGE>
+
+
+</SCREENRIGHT>
+Macintosh Quality Assurance Analysts
+
+Mike Hale
+Justin Parker
+Toshiaki Yamazaki
+Carlos Guerrero
+Mike Murphy
+Jason Hutchins
+Mark Moser
+Christian Arretche
+Derek Simmons
+Roger Eberhart
+Ian Welke
+Frank Gilson
+</PAGE>
+
+
+</SCREENRIGHT>
+Macintosh Additional Testing
+
+Ray Laubach
+Aaron Sakamoto
+Robert Martinsen
+</PAGE>
+
+
+</SCREENRIGHT>
+Quality Assurance Compatibility
+
+Vic Larson
+Kirk Mahony
+</PAGE>
+
+
+</SCREENRIGHT>
+Campaign Commandos
+
+Mark E. Kern, Esq.
+Bill Roper
+Ru Weerasuriya
+Kevin Beardslee
+Dave Berggren
+Scott Mercer
+Eric Dodds
+Dave Hale
+Geoff Fraizer
+Ted Park
+Chris Millar
+Paul Sams
+</PAGE>
+
+
+
+</COMMENT #############################################################>
+</BACKGROUND glue\palnl\backgnd.pcx>
+</FONTCOLOR glue\palnl\tfont.pcx>
+</SCREENLEFT>
+Manager of Product Development
+
+Mark Kern
+</PAGE>
+
+</SCREENLEFT>
+Manager of Dunsel Development
+
+Alan Dabiri
+</PAGE>
+
+</SCREENLEFT>
+Localization Producers
+
+Flavie Gufflet-Dowling
+Chris Millar
+Shane Dabiri
+</PAGE>
+
+
+</SCREENLEFT>
+Globalization Manager
+
+Louis Mutter
+</PAGE>
+
+
+</SCREENLEFT>
+Localization Engineer
+
+Mike Hayes
+</PAGE>
+
+
+</SCREENLEFT>
+Information Systems
+
+Adrian Luff
+Hung Nguyen
+</PAGE>
+
+
+</COMMENT #############################################################>
+</BACKGROUND glue\palpv\backgnd.pcx>
+</FONTCOLOR glue\palpv\tfont.pcx>
+</SCREENRIGHT>
+Public Relations
+
+Susan Wooley
+Tony Gervase
+</PAGE>
+
+
+</SCREENRIGHT>
+Business Development
+
+Paul W. Sams
+Melissa Edwards
+</PAGE>
+
+
+</SCREENRIGHT>
+Marketing
+
+Neal Hubbard
+David LaPerle
+Steve Huot
+Kathy Carter
+Steve Parker
+Jessica Monson
+Mike Bannon
+</PAGE>
+
+
+</SCREENRIGHT>
+U.S. Sales
+
+Todd 'Little Buddy' Coyle
+Danny Kearns
+</PAGE>
+
+
+</SCREENRIGHT>
+International Sales
+
+Jack Allewaert
+Ralph Becker
+Christophe Ramboz
+Jean-Daniel Pages
+</PAGE>
+
+
+</SCREENRIGHT>
+Direct Sales
+
+Rob Beatie
+Kim Farrington
+</PAGE>
+
+
+</SCREENRIGHT>
+Manufacturing
+
+Tom Bryan
+Jaime Chavez
+</PAGE>
+
+</SCREENRIGHT>
+Webmasters
+
+Geoff Fraizer
+Ted Park
+</PAGE>
+
+
+</COMMENT #############################################################>
+</BACKGROUND glue\palrz\backgnd.pcx>
+</FONTCOLOR glue\palrz\tfont.pcx>
+</SCREENLEFT>
+Director of Operations
+
+Isaac Matarasso
+</PAGE>
+
+</SCREENLEFT>
+Director of Support Services
+
+Robert Bridenbecker
+</PAGE>
+
+
+</SCREENLEFT>
+Lead Technical Support
+
+Twain Martin
+John Schwartz
+</PAGE>
+
+
+</SCREENLEFT>
+Technical Support
+
+Brandon Riseling
+Michael Barken
+Thor Biafore
+Mark Downie
+Martha Sapeta
+Mick Yanko
+Jason Schmit
+</PAGE>
+
+</SCREENLEFT>
+Online Support
+
+Pat Nagle
+Alen Lapidis
+David Nguyen
+Collin Smith
+</PAGE>
+
+</SCREENLEFT>
+Macintosh Support
+
+Collin Smith
+</PAGE>
+
+
+</SCREENLEFT>
+Office Administration
+
+Christina Cade
+Jamie Neveaux
+Danna Martin
+</PAGE>
+
+
+</COMMENT #############################################################>
+</BACKGROUND glue\palmm\backgnd.pcx>
+</FONTCOLOR glue\palmm\tfont.pcx>
+</SCREENCENTER>
+Brood War Developed in Association with
+
+Saffire Corporation
+</PAGE>
+
+
+</SCREENCENTER>
+Saffire Operations Manager
+
+Kathy Parke
+</PAGE>
+
+
+</SCREENCENTER>
+Saffire Project/Art Lead
+
+Mike Tidwell
+</PAGE>
+
+
+</SCREENCENTER>
+Saffire Lead Programmer
+
+Dallan Christensen
+</PAGE>
+
+
+</SCREENCENTER>
+Saffire Programming
+
+Kier Knowlton
+</PAGE>
+
+
+
+
+</COMMENT #############################################################>
+</BACKGROUND glue\palpd\backgnd.pcx>
+</FONTCOLOR glue\palpd\tfont.pcx>
+</SCREENCENTER>
+Saffire Artists
+
+Mike Tidwell
+Paul Grimshaw
+Alan Tew
+Dave McClellan
+Jason Price
+Ryan Wood
+</PAGE>
+
+
+
+</SCREENCENTER>
+Saffire Artists
+
+Brent Fox
+Don Seegmiller
+Kathleen Lowe
+Jeremy Throckmorton
+Kier Knowlton
+Walter Park
+</PAGE>
+
+</SCREENCENTER>
+Saffire Artists
+
+Lauriann Wakefield
+Jay Ward
+Gavan Knowlton
+Mike May
+</PAGE>
+
+
+
+</COMMENT #############################################################>
+</BACKGROUND glue\paltd\backgnd.pcx>
+</FONTCOLOR glue\paltd\tfont.pcx>
+</SCREENRIGHT>
+Saffire Audio Director
+
+Eric Nunamaker
+</PAGE>
+
+
+</SCREENRIGHT>
+Saffire Musicians
+
+Daron Bradford
+Mike Dowdle
+Sean Hally
+Jim Hardy
+Gwen Thorton
+</PAGE>
+
+
+</SCREENRIGHT>
+Saffire Additional Design
+
+Paul Grimshaw
+Alan Tew
+Kier Knowlton
+</PAGE>
+
+
+</COMMENT #############################################################>
+</BACKGROUND glue\palzv\backgnd.pcx>
+</FONTCOLOR glue\palzv\tfont.pcx>
+</SCREENLEFT>
+Saffire Maps
+
+Jeremy Throckmorton
+Gavan Knowlton
+Kier Knowlton
+Dallan Christensen
+Alan Tew
+</PAGE>
+
+
+</SCREENLEFT>
+Saffire Testing/QA Manager
+
+Cindi Adamson
+</PAGE>
+
+</SCREENLEFT>
+Saffire Testing/QA
+
+Jeremy Throckmorton
+Gavan Knowlton
+Brian Rushton
+Alex Rushton
+Scott Heppler
+</PAGE>
+
+</SCREENLEFT>
+Saffire Testing/QA
+
+Hal Rushton
+Arlen Runolfson
+Chris Casewell
+Bob Casewell
+Rendal Tippets
+</PAGE>
+
+
+</SCREENLEFT>
+Saffire Testing/QA
+
+Douglas Crosby
+Tim Coskey
+Eric Stewart
+Brett Pedersen
+</PAGE>
+
+
+
+</COMMENT #############################################################>
+</BACKGROUND glue\palmm\backgnd.pcx>
+</FONTCOLOR glue\palmm\tfont.pcx>
+</SCREENLEFT>
+Macintosh Thanks To
+
+Apple Computer
+Apple Game Kitchen
+Interex
+ATI
+</PAGE>
+
+
+</SCREENLEFT>
+Special Thanks To
+
+Chris McCleod
+Henry Silverman
+Jan & Bob Davidson
+Blizzard North
+</PAGE>
+
+
+</SCREENLEFT>
+Thanks To
+
+Brian Fitzgerald
+James Phinney
+Jeff Vaughn
+Robert Djordjevich
+Dan Liebgold
+Pamina Elgueta
+Gary and Barbara Donner
+Craig Donner
+Phuong Young
+</PAGE>
+
+
+</SCREENLEFT>
+Thanks To
+
+Sathington Willoughby
+The French
+Comics, Toons & Toys
+Stephanie Keefer
+little green men
+Austen Paul Hale
+Alexander Lawson Hale
+Evil_Catbert
+The Potato
+</PAGE>
+
+</SCREENLEFT>
+Thanks To
+
+Steve Sigaty and Nuclear Rabbit
+Steve & Vicky Oglesby
+Dan Platt
+Michelle Yeh
+Richard & Alice Heiberg
+David Heiberg
+Michelle & Sal Rivas
+Kelsey Denham
+Neal Prentiss
+</PAGE>
+
+</SCREENLEFT>
+Thanks To
+
+Arsement & Hayes Computers
+Ben Hayes
+PM Music Studio
+Sophia
+Baby Connan
+Victoria Fitch
+Garrett Fitch
+Mason & Bunky
+Jenifer Underwood-Riggio
+</PAGE>
+
+</SCREENLEFT>
+Thanks To
+
+Suzanne Di Piazza
+Patty at Avalon Tattoo 
+Shannon Welch
+NOC guys from Exodus Irvine
+Lisa Pearce
+</PAGE>
+
+</SCREENLEFT>
+Thanks To
+
+Sandra Schneible
+Alysia Batchelder
+The Poxy Boggards
+'Kippy' the Kakaru
+Ray the soda guy
+Funyuns
+</PAGE>
+
+</SCREENCENTER>
+Very Special Thanks To
+
+Allen Adham
+</PAGE>
+
+</SCREENCENTER>
+Credits for original Starcraft
+</PAGE>
