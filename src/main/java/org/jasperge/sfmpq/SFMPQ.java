@@ -1,18 +1,10 @@
 package org.jasperge.sfmpq;
 
-import com.sun.jna.Library;
-import com.sun.jna.Native;
-import com.sun.jna.Pointer;
-import com.sun.jna.ptr.IntByReference;
-import com.sun.jna.ptr.PointerByReference;
+import com.sun.jna.*;
+import com.sun.jna.ptr.*;
 import org.jasperge.misc.FileTools;
 
 import java.io.File;
-import java.io.InputStream;
-import java.net.URL;
-import java.nio.file.Files;
-import java.nio.file.StandardCopyOption;
-import java.util.Arrays;
 
 /**
  * https://www.eshayne.com/jnaex/index.html?example=15
