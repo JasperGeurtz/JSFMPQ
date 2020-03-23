@@ -3,7 +3,6 @@ package org.jasperge.mpq;
 import com.sun.jna.*;
 import com.sun.jna.ptr.*;
 import org.jasperge.sfmpq.*;
-import java.io.*;
 import java.util.*;
 import java.util.stream.*;
 
@@ -11,8 +10,6 @@ import static org.jasperge.sfmpq.SFMPQ.*;
 
 public class SFMPQWrapper {
     public final static SFMPQ sfmpq = SFMPQ.getInstance(); //only 1 instance
-
-    public String listFile = new File("Listfile.txt").getAbsolutePath();
 
     public String getVersionString() {
         return sfmpq.MpqGetVersionString();
@@ -56,14 +53,14 @@ public class SFMPQWrapper {
         }
     }
 
-    public List<FILELISTENTRY> listFiles(Pointer archive) throws MPQException{
+    public List<FILELISTENTRY> listFiles(Pointer archive, String filelist) throws MPQException{
         int n = sfmpq.SFileGetFileInfo(archive, SFILE_INFO_HASH_TABLE_SIZE);
         if (n == 0) {
             return new ArrayList<>();
         }
         FILELISTENTRY[] fileListBuffer = new FILELISTENTRY[n];
 
-        if (!sfmpq.SFileListFiles(archive, null, fileListBuffer, 0)) {
+        if (!sfmpq.SFileListFiles(archive, filelist, fileListBuffer, 0)) {
             throw new MPQException();
         }
         return Arrays.stream(fileListBuffer)

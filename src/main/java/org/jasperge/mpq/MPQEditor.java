@@ -2,6 +2,7 @@ package org.jasperge.mpq;
 
 import com.sun.jna.Pointer;
 import com.sun.jna.ptr.*;
+import org.jasperge.misc.FileTools;
 
 import java.io.*;
 import java.nio.file.Path;
@@ -14,6 +15,7 @@ import static org.jasperge.sfmpq.SFMPQ.*;
 public class MPQEditor implements AutoCloseable{
     final SFMPQWrapper sfmpq = new SFMPQWrapper();
     private final Pointer archive;
+    private String listfilePath = null;
 
     /**
      * fails if doesn't exist
@@ -115,7 +117,8 @@ public class MPQEditor implements AutoCloseable{
     }
 
     public List<MPQFile> getFiles() throws MPQException {
-        return sfmpq.listFiles(archive).stream()
+        String listFile = hasFile("(listfile)") ? null : getListfilePath();
+        return sfmpq.listFiles(archive, listFile).stream()
                 .map(MPQFile::new)
                 .collect(Collectors.toList());
     }
@@ -141,5 +144,21 @@ public class MPQEditor implements AutoCloseable{
             e.printStackTrace();
         }
         sfmpq.closeUpdatedArchive(archive);
+    }
+
+    /**
+     * Set this if you want to use a custom (listfile)
+     */
+    public void setListfilePath(String listfilePath) {
+        this.listfilePath = listfilePath;
+    }
+
+    public String getListfilePath() {
+        if (listfilePath == null) {
+            // use default listfile
+            File listFile = FileTools.copyToTemp("Listfile.txt");
+            return listFile.getPath();
+        }
+        return listfilePath;
     }
 }

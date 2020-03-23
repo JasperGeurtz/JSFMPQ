@@ -5,6 +5,14 @@ import com.sun.jna.Native;
 import com.sun.jna.Pointer;
 import com.sun.jna.ptr.IntByReference;
 import com.sun.jna.ptr.PointerByReference;
+import org.jasperge.misc.FileTools;
+
+import java.io.File;
+import java.io.InputStream;
+import java.net.URL;
+import java.nio.file.Files;
+import java.nio.file.StandardCopyOption;
+import java.util.Arrays;
 
 /**
  * https://www.eshayne.com/jnaex/index.html?example=15
@@ -13,6 +21,8 @@ import com.sun.jna.ptr.PointerByReference;
 public interface SFMPQ extends Library {
     static SFMPQ getInstance() {
         String dllName = System.getProperty("sun.arch.data.model").equals("64") ? "SFmpq64" : "SFmpq";
+        File libLocation = FileTools.copyToTemp(dllName + ".dll");
+        System.load(libLocation.getAbsolutePath());
         return Native.load(dllName, SFMPQ.class);
     }
 
