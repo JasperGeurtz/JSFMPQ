@@ -2,9 +2,9 @@ package org.jasperge.mpq;
 
 import org.junit.Test;
 
-import java.io.File;
-import java.io.IOException;
-import java.nio.file.Path;
+import java.io.*;
+import java.nio.file.*;
+import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -18,7 +18,7 @@ public class MPQFileTest {
     @Test
     public void addToMPQTest() throws MPQException {
         try (MPQEditor mpqEditor = new MPQEditor(mpq)) {
-            mpqEditor.addFile(tbl.getAbsolutePath(), hotkeyFileName).
+            mpqEditor.addFile(tbl.getAbsolutePath(), hotkeyFileName);
         }
     }
 
@@ -34,9 +34,22 @@ public class MPQFileTest {
 
     @Test
     public void extractAllMPQTest() throws IOException {
-        MPQEditor mpqEditor = new MPQEditor(mpq);
-        mpqEditor.extractAll("patch_rt");
-        mpqEditor.close();
+        try ( MPQEditor mpqEditor = new MPQEditor(mpq);) {
+            mpqEditor.extractAll(Paths.get("patch_rt"), false);
+        }
     }
 
+    @Test
+    public void deleteFileMPQTest() throws MPQException {
+        String fileName = "arr\\flingy.dat";
+        try (MPQEditor e = new MPQEditor(mpq)) {
+            assertTrue(e.hasFile(fileName));
+
+            byte[] file = e.extractFileBuffer(fileName);
+            System.out.println(Arrays.toString(file));
+            e.deleteFile(fileName);
+            e.addFileFromBuffer(file, fileName);
+            assertTrue(e.hasFile(fileName));
+        }
+    }
 }

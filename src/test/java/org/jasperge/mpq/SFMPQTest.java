@@ -18,6 +18,15 @@ public class SFMPQTest {
     SFMPQWrapper sfmpq = new SFMPQWrapper();
 
     @Test
+    public void testExceptionName() {
+        try {
+            sfmpq.openArchive("nonsense", 0, 0);
+        } catch (MPQException e) {
+            assertTrue(e.toString().contains("openArchive"));
+        }
+    }
+
+    @Test
     public void testAppending() throws MPQException {
         assertEquals(2.0, sfmpq.getVersionFloat(), 0.0001);
         assertEquals("ShadowFlare MPQ API Library v1.08", sfmpq.getVersionString());

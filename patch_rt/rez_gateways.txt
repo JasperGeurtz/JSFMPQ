@@ -1,8 +1,0 @@
-# domain name | delta from GMT | gateway name
-#
-uswest.battle.net   8  U.S. West
-useast.battle.net   6  U.S. East
-asia.battle.net    -9  Asia
-europe.battle.net  -1  Europe
-sc.theabyss.ru	    3  The Abyss (ICCup)
-games.podolsk.ru    8  Podolsk

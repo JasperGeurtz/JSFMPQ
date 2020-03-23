@@ -3,14 +3,13 @@ package org.jasperge.misc;
 import org.jasperge.mpq.MPQEditor;
 import org.jasperge.tbl.TBLTools;
 
-import java.io.File;
 import java.io.IOException;
-import java.nio.file.Path;
+import java.nio.file.*;
 import java.util.List;
 
 public class CustomHotkeys {
     public static void main(String[] args) {
-        Path patchMPQ = new File("src/test/resources/patch_rt.mpq").toPath();
+        Path patchMPQ = Paths.get("src/test/resources/patch_rt.mpq");
 
         // Open MPQ file
         try (MPQEditor editor = new MPQEditor(patchMPQ)) {

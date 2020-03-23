@@ -1,7 +1,7 @@
 package org.jasperge.mpq;
 
 import com.sun.jna.Pointer;
-import com.sun.jna.ptr.IntByReference;
+import com.sun.jna.ptr.*;
 
 import java.io.*;
 import java.nio.file.Path;
@@ -24,41 +24,63 @@ public class MPQEditor implements AutoCloseable{
     }
 
     /**
-     * Add file to Archive: WILL REPLACE!
+     * Add file to archive: WILL REPLACE and compress!
      */
-    public MPQEditor addFile(String sourceFileName, String destFileName) throws MPQException {
-        sfmpq.addFileToArchive(archive, sourceFileName, destFileName, MAFA_REPLACE_EXISTING);
-        return this;
+    public void addFile(String sourceFilename, String destFilename) throws MPQException {
+        sfmpq.addFileToArchive(archive, sourceFilename, destFilename, MAFA_REPLACE_EXISTING | MAFA_COMPRESS);
+    }
+
+    /**
+     * Add WAV file to archive: WILL REPLACE!
+     */
+    public void addWave(String sourceFilename, String destFilename, WaveQuality quality) throws MPQException {
+        sfmpq.addWave(archive, sourceFilename, destFilename, MAFA_REPLACE_EXISTING , quality.value);
     }
 
     /**
      * Add file using bytes instead of path.
      */
-    public MPQEditor addFileFromBuffer(byte[] bytes, String destFileName) throws MPQException {
-        sfmpq.addFileFromBuffer(archive, bytes, bytes.length, destFileName, MAFA_REPLACE_EXISTING);
-        return this;
+    public void addFileFromBuffer(byte[] bytes, String destFilename) throws MPQException {
+        sfmpq.addFileFromBuffer(archive, bytes, bytes.length, destFilename, MAFA_REPLACE_EXISTING);
     }
 
     /**
-     * Extract file, if destFileName == null, it will take the name of the sourceFile
-     * but with all `/` & `\\` replaced with `_`
+     * Add WAV file using bytes instead of path.
      */
-    public MPQEditor extractFile(String sourceFileName, Path destFileName) throws IOException {
-        if (destFileName == null) {
-            destFileName = Paths.get(sourceFileName.replace('\\', '_').replace('/','_'));
-        }
-        byte[] buffer = extractFileBuffer(sourceFileName);
-        if (buffer == null) {
-            throw new MPQException("extractFileBuffer");
-        }
-        try (FileOutputStream fos = new FileOutputStream(destFileName.toString())) {
-            fos.write(buffer);
-        }
-        return this;
+    public void addWaveFromBuffer(byte[] bytes, String destFilename, WaveQuality quality) throws MPQException {
+        sfmpq.addWaveFromBuffer(archive, bytes, bytes.length, destFilename, MAFA_REPLACE_EXISTING, quality.value);
     }
 
-    public MPQEditor extractAll(String outputDir) throws IOException {
-        File dir = new File(outputDir);
+    /**
+     * Delete file from the archive
+     */
+    public void deleteFile(String sourceFilename) throws MPQException {
+        sfmpq.deleteFile(archive, sourceFilename);
+    }
+
+    /**
+     * Rename file in the archive
+     */
+    public void renameFile(String filenameBefore, String filenameAfter) throws MPQException {
+        sfmpq.renameFile(archive, filenameBefore, filenameAfter);
+    }
+
+    /**
+     * Extract file, if destFilename == null, it will take the name of the sourceFile
+     * but with all `/` & `\\` replaced with `_`
+     */
+    public void extractFile(String sourceFilename, Path destFilename) throws IOException {
+        if (destFilename == null) {
+            destFilename = Paths.get(sourceFilename.replace('\\', '_').replace('/','_'));
+        }
+        byte[] buffer = extractFileBuffer(sourceFilename);
+        try (FileOutputStream fos = new FileOutputStream(destFilename.toString())) {
+            fos.write(buffer);
+        }
+    }
+
+    public void extractAll(Path outputDir, boolean stopOnError) throws IOException {
+        File dir = outputDir.toFile();
         if (!dir.exists()) {
             boolean ret = dir.mkdirs();
             if (!ret) {
@@ -69,15 +91,20 @@ public class MPQEditor implements AutoCloseable{
             throw new MPQException("extractAll Error: " + outputDir + " is not a directory");
         }
         for (MPQFile file : getFiles()) {
-            extractFile(file.name, Paths.get(outputDir + "\\" + file.name
-                    .replace("\\", "_")
-                    .replace("/", "_")));
+            try {
+                extractFile(file.name, Paths.get(outputDir + "\\" + file.name
+                        .replace("\\", "_")
+                        .replace("/", "_")));
+            } catch (MPQException exc) {
+                if (stopOnError) {
+                    throw exc;
+                }
+            }
         }
-        return this;
     }
 
-    public byte[] extractFileBuffer(String sourceFileName) throws MPQException {
-        Pointer filePtr = sfmpq.openFileEx(archive, sourceFileName, 0);
+    public byte[] extractFileBuffer(String sourceFilename) throws MPQException {
+        Pointer filePtr = sfmpq.openFileEx(archive, sourceFilename, 0);
         int fileSize = sfmpq.getFileSize(filePtr, null);
         byte[] buffer = new byte[fileSize];
         if (fileSize > 0) {
@@ -93,17 +120,26 @@ public class MPQEditor implements AutoCloseable{
                 .collect(Collectors.toList());
     }
 
-    public void close() throws MPQException {
-        sfmpq.closeUpdatedArchive(archive);
+    public boolean hasFile(String filename) {
+        // use raw SFMPQ directly
+        PointerByReference ptr = new PointerByReference();
+        boolean ret = SFMPQWrapper.sfmpq.SFileOpenFileEx(archive, filename, 0, ptr);
+        if (ret) { //close if succesfully opened
+            SFMPQWrapper.sfmpq.SFileCloseFile(ptr.getValue());
+        }
+        return ret;
     }
 
-    public boolean hasFile(String filename) throws MPQException {
+    public void compact() throws MPQException {
+        sfmpq.compact(archive);
+    }
+
+    public void close() throws MPQException {
         try {
-            Pointer ptr = sfmpq.openFileEx(archive, filename, 0);
-            sfmpq.closeFile(ptr);
-            return true;
+            compact();
         } catch (MPQException e) {
-            return false;
+            e.printStackTrace();
         }
+        sfmpq.closeUpdatedArchive(archive);
     }
 }
