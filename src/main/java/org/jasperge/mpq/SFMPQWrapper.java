@@ -9,7 +9,7 @@ import java.util.stream.*;
 import static org.jasperge.sfmpq.SFMPQ.*;
 
 public class SFMPQWrapper {
-    public final static SFMPQ sfmpq = SFMPQ.getInstance(); //only 1 instance
+    public final static SFMPQ sfmpq = SFMPQ.INSTANCE; //only 1 instance
 
     public String getVersionString() {
         return sfmpq.MpqGetVersionString();

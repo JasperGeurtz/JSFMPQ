@@ -2,21 +2,13 @@ package org.jasperge.sfmpq;
 
 import com.sun.jna.*;
 import com.sun.jna.ptr.*;
-import org.jasperge.misc.FileTools;
-
-import java.io.File;
 
 /**
  * https://www.eshayne.com/jnaex/index.html?example=15
  * https://sfsrealm.hopto.org/inside_mopaq/chapter4.htm
  */
 public interface SFMPQ extends Library {
-    static SFMPQ getInstance() {
-        String dllName = System.getProperty("sun.arch.data.model").equals("64") ? "SFmpq64" : "SFmpq";
-        File libLocation = FileTools.copyToTemp(dllName + ".dll");
-        System.load(libLocation.getAbsolutePath());
-        return Native.load(dllName, SFMPQ.class);
-    }
+    SFMPQ INSTANCE = SFMPQInstance.get();
 
     String MpqGetVersionString(); //LPCSTR SFMPQAPI WINAPI MpqGetVersionString();
 
