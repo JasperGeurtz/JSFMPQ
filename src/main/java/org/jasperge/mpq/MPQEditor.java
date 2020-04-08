@@ -138,11 +138,6 @@ public class MPQEditor implements AutoCloseable{
     }
 
     public void close() throws MPQException {
-        try {
-            compact();
-        } catch (MPQException e) {
-            e.printStackTrace();
-        }
         sfmpq.closeUpdatedArchive(archive);
     }
 
@@ -156,7 +151,7 @@ public class MPQEditor implements AutoCloseable{
     public String getListfilePath() {
         if (listfilePath == null) {
             // use default listfile
-            File listFile = FileTools.copyToTemp("Listfile.txt");
+            File listFile = FileTools.copyToTemp("(listfile)");
             return listFile.getPath();
         }
         return listfilePath;
